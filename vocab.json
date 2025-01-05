@@ -1,0 +1,4114 @@
+[
+  {
+    "german": "Gelöst",
+    "english": "Solved"
+  },
+  {
+    "german": "Ergebnisse/Befunde",
+    "english": "findings"
+  },
+  {
+    "german": "Bestätigung",
+    "english": "confirmation"
+  },
+  {
+    "german": "Angenehm",
+    "english": "pleasant"
+  },
+  {
+    "german": "dürfen",
+    "english": "allowed"
+  },
+  {
+    "german": "zulässig",
+    "english": "permissible"
+  },
+  {
+    "german": "gefüllt",
+    "english": "filled"
+  },
+  {
+    "german": "gesperrt",
+    "english": "locked"
+  },
+  {
+    "german": "Zugriff",
+    "english": "access"
+  },
+  {
+    "german": "Selbstbedienung",
+    "english": "self service"
+  },
+  {
+    "german": "Maßnahme",
+    "english": "measure"
+  },
+  {
+    "german": "Mengen",
+    "english": "quantities"
+  },
+  {
+    "german": "zuverlässig",
+    "english": "reliable"
+  },
+  {
+    "german": "bisschen",
+    "english": "little bit"
+  },
+  {
+    "german": "beitreten",
+    "english": "join"
+  },
+  {
+    "german": "sowieso",
+    "english": "anyway"
+  },
+  {
+    "german": "Zugriff",
+    "english": "Access"
+  },
+  {
+    "german": "Anwendung",
+    "english": "application"
+  },
+  {
+    "german": "aber",
+    "english": "but"
+  },
+  {
+    "german": "Fertigstellung",
+    "english": "completion"
+  },
+  {
+    "german": "Rahmen",
+    "english": "frame"
+  },
+  {
+    "german": "gegenseitige Abhängigkeit",
+    "english": "interdependence"
+  },
+  {
+    "german": "Mitglieder",
+    "english": "members"
+  },
+  {
+    "german": "Voraussetzungen",
+    "english": "prerequisites"
+  },
+  {
+    "german": "gemessen",
+    "english": "measured"
+  },
+  {
+    "german": "Lösung",
+    "english": "solution"
+  },
+  {
+    "german": "wählen",
+    "english": "select/pick"
+  },
+  {
+    "german": "Freiheit",
+    "english": "freedom"
+  },
+  {
+    "german": "Währung",
+    "english": "Currency"
+  },
+  {
+    "german": "berühmt",
+    "english": "famous"
+  },
+  {
+    "german": "Mannschaft",
+    "english": "team"
+  },
+  {
+    "german": "müde",
+    "english": "tired"
+  },
+  {
+    "german": "außerdem",
+    "english": "in addition"
+  },
+  {
+    "german": "schlechter",
+    "english": "worse"
+  },
+  {
+    "german": "verwalten",
+    "english": "manage"
+  },
+  {
+    "german": "Bürgschaft",
+    "english": "bailment"
+  },
+  {
+    "german": "beigetragen",
+    "english": "contributed"
+  },
+  {
+    "german": "Kurzfristiges Ziel",
+    "english": "short-term goal"
+  },
+  {
+    "german": "Langfristiges Ziel",
+    "english": "long-term goal"
+  },
+  {
+    "german": "Tätigkeiten",
+    "english": "activities/tasks"
+  },
+  {
+    "german": "Gewicht",
+    "english": "weight"
+  },
+  {
+    "german": "Wegen",
+    "english": "because of / due to"
+  },
+  {
+    "german": "Langweilig",
+    "english": "boring"
+  },
+  {
+    "german": "ansonsten",
+    "english": "otherwise"
+  },
+  {
+    "german": "Schritte",
+    "english": "steps"
+  },
+  {
+    "german": "kürzlich",
+    "english": "recent"
+  },
+  {
+    "german": "Erzählen",
+    "english": "tell/narrate"
+  },
+  {
+    "german": "besteht",
+    "english": "consists"
+  },
+  {
+    "german": "auf",
+    "english": "on"
+  },
+  {
+    "german": "ging",
+    "english": "went"
+  },
+  {
+    "german": "benachrichtigen",
+    "english": "notify"
+  },
+  {
+    "german": "stattfinden",
+    "english": "take place"
+  },
+  {
+    "german": "verlieren",
+    "english": "lose"
+  },
+  {
+    "german": "Verhalten",
+    "english": "behavior"
+  },
+  {
+    "german": "Aussprache",
+    "english": "pronunciation"
+  },
+  {
+    "german": "riskant",
+    "english": "risky"
+  },
+  {
+    "german": "Risiko",
+    "english": "risk"
+  },
+  {
+    "german": "eintrifft",
+    "english": "arrives"
+  },
+  {
+    "german": "Pflege",
+    "english": "care"
+  },
+  {
+    "german": "bevorzugen",
+    "english": "prefer"
+  },
+  {
+    "german": "Art",
+    "english": "kind"
+  },
+  {
+    "german": "Kämpfer",
+    "english": "fighter"
+  },
+  {
+    "german": "faul",
+    "english": "lazy"
+  },
+  {
+    "german": "Aufhören",
+    "english": "quit/stop"
+  },
+  {
+    "german": "Strand",
+    "english": "beach"
+  },
+  {
+    "german": "verwechseln",
+    "english": "mix-up"
+  },
+  {
+    "german": "Dorf",
+    "english": "village"
+  },
+  {
+    "german": "Beliebt",
+    "english": "popular"
+  },
+  {
+    "german": "Mengen",
+    "english": "quantities"
+  },
+  {
+    "german": "Genießen",
+    "english": "enjoy"
+  },
+  {
+    "german": "durch",
+    "english": "through"
+  },
+  {
+    "german": "untereinander",
+    "english": "among each other"
+  },
+  {
+    "german": "Vertrauen",
+    "english": "confidence"
+  },
+  {
+    "german": "ärgerlich",
+    "english": "annoying"
+  },
+  {
+    "german": "dargestellt",
+    "english": "shown"
+  },
+  {
+    "german": "verwenden",
+    "english": "use"
+  },
+  {
+    "german": "daraus",
+    "english": "from this"
+  },
+  {
+    "german": "abhängig",
+    "english": "dependent"
+  },
+  {
+    "german": "bewusst",
+    "english": "aware"
+  },
+  {
+    "german": "schaffen",
+    "english": "create"
+  },
+  {
+    "german": "Bedarf",
+    "english": "demand/need"
+  },
+  {
+    "german": "Erwartungshaltung",
+    "english": "expectations"
+  },
+  {
+    "german": "Bausteine",
+    "english": "building blocks"
+  },
+  {
+    "german": "Umweltschutz",
+    "english": "environmental protection"
+  },
+  {
+    "german": "Veranstaltung",
+    "english": "event"
+  },
+  {
+    "german": "ermitteln",
+    "english": "determine"
+  },
+  {
+    "german": "reden",
+    "english": "talk/speak"
+  },
+  {
+    "german": "Botschaft",
+    "english": "message"
+  },
+  {
+    "german": "begleitet",
+    "english": "accompanied"
+  },
+  {
+    "german": "Ähnlich",
+    "english": "similar"
+  },
+  {
+    "german": "entfernt",
+    "english": "away"
+  },
+  {
+    "german": "Vogel",
+    "english": "bird"
+  },
+  {
+    "german": "Auswirkungen",
+    "english": "effects"
+  },
+  {
+    "german": "unabhängig",
+    "english": "independent"
+  },
+  {
+    "german": "insbesondere",
+    "english": "in particular"
+  },
+  {
+    "german": "Einfluss",
+    "english": "influence"
+  },
+  {
+    "german": "Quatsch",
+    "english": "rubbish/nonsense"
+  },
+  {
+    "german": "Aufzug",
+    "english": "elevator"
+  },
+  {
+    "german": "besonders",
+    "english": "particularly"
+  },
+  {
+    "german": "Draußen",
+    "english": "outside"
+  },
+  {
+    "german": "Parken",
+    "english": "parking"
+  },
+  {
+    "german": "Veranstaltungen",
+    "english": "events"
+  },
+  {
+    "german": "langweilig",
+    "english": "boring"
+  },
+  {
+    "german": "verbringen",
+    "english": "spend"
+  },
+  {
+    "german": "Lied",
+    "english": "song"
+  },
+  {
+    "german": "Gelegenheit",
+    "english": "opportunity"
+  },
+  {
+    "german": "ungefähr",
+    "english": "approximately / for about"
+  },
+  {
+    "german": "hergestellt",
+    "english": "manufactured / produced"
+  },
+  {
+    "german": "Eintrittsgebühr",
+    "english": "entrance fee"
+  },
+  {
+    "german": "untersuchen",
+    "english": "examine / investigate"
+  },
+  {
+    "german": "Ausstattung",
+    "english": "equipment / facilities"
+  },
+  {
+    "german": "Landebahn",
+    "english": "runway"
+  },
+  {
+    "german": "hinweisen",
+    "english": "indicate"
+  },
+  {
+    "german": "Grenzländer",
+    "english": "border countries"
+  },
+  {
+    "german": "Abkürzung",
+    "english": "abbreviation"
+  },
+  {
+    "german": "Voraussichtlich",
+    "english": "presumably"
+  },
+  {
+    "german": "anbei",
+    "english": "enclosed / attached"
+  },
+  {
+    "german": "aufgelieferten Teilen",
+    "english": "shipped parts"
+  },
+  {
+    "german": "Herstellbarkeit",
+    "english": "manufacturability"
+  },
+  {
+    "german": "Fertigung",
+    "english": "manufacturing"
+  },
+  {
+    "german": "ermittelten",
+    "english": "determined"
+  },
+  {
+    "german": "Prüfvorgaben",
+    "english": "test specifications"
+  },
+  {
+    "german": "überlegene",
+    "english": "superior"
+  },
+  {
+    "german": "fähige",
+    "english": "capable"
+  },
+  {
+    "german": "Sachanlagen",
+    "english": "property, plant, equipment"
+  },
+  {
+    "german": "Erwartung",
+    "english": "expectations"
+  },
+  {
+    "german": "Ausrichtung",
+    "english": "alignment"
+  },
+  {
+    "german": "Wertschöpfung",
+    "english": "added value"
+  },
+  {
+    "german": "Vermeidung",
+    "english": "avoidance"
+  },
+  {
+    "german": "deutlichen",
+    "english": "clear / clearly / significantly"
+  },
+  {
+    "german": "Vergabe",
+    "english": "award (document)"
+  },
+  {
+    "german": "Vertrag",
+    "english": "contract"
+  },
+  {
+    "german": "Aufwendungen",
+    "english": "expenses"
+  },
+  {
+    "german": "Regelwerken",
+    "english": "regulations"
+  },
+  {
+    "german": "Freigabe",
+    "english": "release"
+  },
+  {
+    "german": "Zielerreichung",
+    "english": "target achievement"
+  },
+  {
+    "german": "Befähiger",
+    "english": "enabler"
+  },
+  {
+    "german": "Vertiefung",
+    "english": "deepening"
+  },
+  {
+    "german": "entweder",
+    "english": "either"
+  },
+  {
+    "german": "gültig",
+    "english": "valid"
+  },
+  {
+    "german": "Musterprüfung",
+    "english": "sample test"
+  },
+  {
+    "german": "Muster / Schablone",
+    "english": "template"
+  },
+  {
+    "german": "Risikoeinstufung",
+    "english": "risk rating"
+  },
+  {
+    "german": "Umfang",
+    "english": "scope"
+  },
+  {
+    "german": "Bauteile",
+    "english": "components"
+  },
+  {
+    "german": "abgesichert",
+    "english": "secured"
+  },
+  {
+    "german": "angefragt",
+    "english": "requested"
+  },
+  {
+    "german": "verteilt",
+    "english": "distributed"
+  },
+  {
+    "german": "Messgerät",
+    "english": "measuring device / gauge"
+  },
+  {
+    "german": "vorherige",
+    "english": "previous"
+  },
+  {
+    "german": "Fähigkeiten",
+    "english": "capabilities"
+  },
+  {
+    "german": "Bedingungen",
+    "english": "conditions"
+  },
+  {
+    "german": "Bewertung",
+    "english": "evaluation"
+  },
+  {
+    "german": "Die Lieferantentstandorte",
+    "english": "supplier locations"
+  },
+  {
+    "german": "Reifegradbewertung",
+    "english": "maturity assessment"
+  },
+  {
+    "german": "Bereichsübergreifende",
+    "english": "cross-departmental"
+  },
+  {
+    "german": "Zusammenfassung",
+    "english": "summary"
+  },
+  {
+    "german": "Bericht",
+    "english": "report"
+  },
+  {
+    "german": "Bereichsübergreifende",
+    "english": "cross-departmental"
+  },
+  {
+    "german": "Bedarf",
+    "english": "requirement"
+  },
+  {
+    "german": "verfügbar",
+    "english": "available"
+  },
+  {
+    "german": "erforderlich",
+    "english": "necessary"
+  },
+  {
+    "german": "Vernetzung",
+    "english": "networking"
+  },
+  {
+    "german": "Folgeprozess",
+    "english": "follow-up process"
+  },
+  {
+    "german": "Zeitnah",
+    "english": "promptly"
+  },
+  {
+    "german": "weitergeleitet",
+    "english": "forwarded"
+  },
+  {
+    "german": "weiterleiten",
+    "english": "to forward"
+  },
+  {
+    "german": "bekannten",
+    "english": "known"
+  },
+  {
+    "german": "Gesamtbewertung",
+    "english": "overall rating"
+  },
+  {
+    "german": "unbedingt",
+    "english": "necessarily / absolutely"
+  },
+  {
+    "german": "nach Aufforderung",
+    "english": "upon request"
+  },
+  {
+    "german": "hinterfragt",
+    "english": "questioned"
+  },
+  {
+    "german": "jedoch",
+    "english": "however"
+  },
+  {
+    "german": "hinreichend",
+    "english": "sufficient"
+  },
+  {
+    "german": "Umfangreichen",
+    "english": "extensive"
+  },
+  {
+    "german": "Umfeld",
+    "english": "environment"
+  },
+  {
+    "german": "Umsetzung",
+    "english": "implementation"
+  },
+  {
+    "german": "Fragebogen",
+    "english": "questionnaire"
+  },
+  {
+    "german": "Schlüsselthemen",
+    "english": "key topics"
+  },
+  {
+    "german": "Vollständigkeit",
+    "english": "completeness"
+  },
+  {
+    "german": "Abarbeitung",
+    "english": "processing"
+  },
+  {
+    "german": "Lieferantenverursachten",
+    "english": "supplier-caused"
+  },
+  {
+    "german": "Anbindung",
+    "english": "connection"
+  },
+  {
+    "german": "Nachricht",
+    "english": "message"
+  },
+  {
+    "german": "Unglücklich",
+    "english": "unfortunate"
+  },
+  {
+    "german": "abgeschlossen",
+    "english": "completed"
+  },
+  {
+    "german": "Vortrag",
+    "english": "lecture / presentation"
+  },
+  {
+    "german": "Halbleiter",
+    "english": "semiconductor"
+  },
+  {
+    "german": "Hersteller",
+    "english": "manufacturer"
+  },
+  {
+    "german": "betroffen",
+    "english": "affected"
+  },
+  {
+    "german": "Positionierung",
+    "english": "positioning"
+  },
+  {
+    "german": "Bewertung",
+    "english": "assessment"
+  },
+  {
+    "german": "Umsetzung",
+    "english": "implementation"
+  },
+  {
+    "german": "Nachhaltigkeitsthemen",
+    "english": "sustainability topics"
+  },
+  {
+    "german": "die Steuerung / Leitung / Führung",
+    "english": "management"
+  },
+  {
+    "german": "Dienstleister",
+    "english": "service provider"
+  },
+  {
+    "german": "Messung",
+    "english": "measurement"
+  },
+  {
+    "german": "Leistung",
+    "english": "performance"
+  },
+  {
+    "german": "Nachvollziehbarkeit",
+    "english": "traceability"
+  },
+  {
+    "german": "Stützstellen",
+    "english": "reference points"
+  },
+  {
+    "german": "Prozessteuerung",
+    "english": "process control"
+  },
+  {
+    "german": "automatisierte",
+    "english": "automated"
+  },
+  {
+    "german": "Verfügbarkeit",
+    "english": "availability"
+  },
+  {
+    "german": "Prozessmessgrößen",
+    "english": "process metrics"
+  },
+  {
+    "german": "Übersicht",
+    "english": "overview"
+  },
+  {
+    "german": "Vorbereitungen",
+    "english": "preparations"
+  },
+  {
+    "german": "Gespräch",
+    "english": "conversation"
+  },
+  {
+    "german": "voraus",
+    "english": "in advance / ahead"
+  },
+  {
+    "german": "Zusammenarbeit",
+    "english": "cooperation"
+  },
+  {
+    "german": "Ausrichtung",
+    "english": "alignment"
+  },
+  {
+    "german": "Strategische Stoßrichtung",
+    "english": "strategic direction"
+  },
+  {
+    "german": "Gesamtbericht",
+    "english": "overall report"
+  },
+  {
+    "german": "Gesellschaft",
+    "english": "society"
+  },
+  {
+    "german": "Behörden",
+    "english": "authorities"
+  },
+  {
+    "german": "Unterstützer",
+    "english": "supporter"
+  },
+  {
+    "german": "Lieferanten",
+    "english": "suppliers"
+  },
+  {
+    "german": "Nachhaltigkeit",
+    "english": "sustainability"
+  },
+  {
+    "german": "Umweltschutz",
+    "english": "environmental protection"
+  },
+  {
+    "german": "Kundennutzen",
+    "english": "customer benefit"
+  },
+  {
+    "german": "gesetzliche",
+    "english": "legal"
+  },
+  {
+    "german": "Vorgaben",
+    "english": "requirements"
+  },
+  {
+    "german": "Normen",
+    "english": "standards"
+  },
+  {
+    "german": "Verantwortlich",
+    "english": "responsible"
+  },
+  {
+    "german": "Wertschöpfungskette",
+    "english": "value chain"
+  },
+  {
+    "german": "Beschäftigung",
+    "english": "employment"
+  },
+  {
+    "german": "Beschäftigungsfähigkeit",
+    "english": "employability"
+  },
+  {
+    "german": "Gebiet",
+    "english": "region / area"
+  },
+  {
+    "german": "Verständigung",
+    "english": "understanding"
+  },
+  {
+    "german": "Anwender",
+    "english": "user"
+  },
+  {
+    "german": "Anstieg",
+    "english": "increase"
+  },
+  {
+    "german": "Gewichtung",
+    "english": "weighting"
+  },
+  {
+    "german": "Folien",
+    "english": "slides"
+  },
+  {
+    "german": "Reifegrad",
+    "english": "maturity level"
+  },
+  {
+    "german": "Dichtungen",
+    "english": "seals"
+  },
+  {
+    "german": "Karosserie",
+    "english": "bodywork"
+  },
+  {
+    "german": "Auswertung",
+    "english": "evaluation / analysis"
+  },
+  {
+    "german": "Unterweisungen",
+    "english": "instructions"
+  },
+  {
+    "german": "Einarbeitung",
+    "english": "training / orientation"
+  },
+  {
+    "german": "Abgleich",
+    "english": "comparison / alignment"
+  },
+  {
+    "german": "erledigt",
+    "english": "completed / done"
+  },
+  {
+    "german": "bestätigt",
+    "english": "confirmed"
+  },
+  {
+    "german": "Wirksamkeit",
+    "english": "effectiveness"
+  },
+  {
+    "german": "fällig",
+    "english": "due"
+  },
+  {
+    "german": "Verbesserungsbereiche",
+    "english": "areas for improvement"
+  },
+  {
+    "german": "Vorgabe",
+    "english": "specification"
+  },
+  {
+    "german": "umgesetzt",
+    "english": "implemented"
+  },
+  {
+    "german": "entfernt",
+    "english": "removed / distant"
+  },
+  {
+    "german": "Handlungsfelder",
+    "english": "fields of action"
+  },
+  {
+    "german": "Erfolgskritische",
+    "english": "critical for success"
+  },
+  {
+    "german": "Änderungen",
+    "english": "changes"
+  },
+  {
+    "german": "Vorgehensweisen",
+    "english": "approaches / procedures"
+  },
+  {
+    "german": "Umsetzung",
+    "english": "implementation"
+  },
+  {
+    "german": "Messen",
+    "english": "measure"
+  },
+  {
+    "german": "Mitarbeiterbefragung",
+    "english": "employee survey"
+  },
+  {
+    "german": "Vorhersage",
+    "english": "prediction"
+  },
+  {
+    "german": "Fortschritt",
+    "english": "progress"
+  },
+  {
+    "german": "ebenso",
+    "english": "also"
+  },
+  {
+    "german": "hervorragende",
+    "english": "excellent"
+  },
+  {
+    "german": "Das Vorgehen",
+    "english": "approach / procedure"
+  },
+  {
+    "german": "Umsetzung",
+    "english": "implementation"
+  },
+  {
+    "german": "Bewertung",
+    "english": "evaluation"
+  },
+  {
+    "german": "Verbesserung",
+    "english": "improvement"
+  },
+  {
+    "german": "Umfassung",
+    "english": "comprehensiveness"
+  },
+  {
+    "german": "Herausragend",
+    "english": "outstanding"
+  },
+  {
+    "german": "Die Vorgabe",
+    "english": "requirement / directive"
+  },
+  {
+    "german": "verändert",
+    "english": "changed"
+  },
+  {
+    "german": "Förderung",
+    "english": "support / promotion"
+  },
+  {
+    "german": "Rückmeldung",
+    "english": "feedback"
+  },
+  {
+    "german": "Mitarbeitende",
+    "english": "employees"
+  },
+  {
+    "german": "Zweck",
+    "english": "purpose"
+  },
+  {
+    "german": "Führungsansatz",
+    "english": "leadership approach"
+  },
+  {
+    "german": "Rücksprachen",
+    "english": "consultations"
+  },
+  {
+    "german": "Wahrnehmung",
+    "english": "perception"
+  },
+  {
+    "german": "Indikatoren",
+    "english": "indicators"
+  },
+  {
+    "german": "Erfassung",
+    "english": "recording / capture"
+  },
+  {
+    "german": "notwendig",
+    "english": "necessary"
+  },
+  {
+    "german": "Unterstützung",
+    "english": "support"
+  },
+  {
+    "german": "Vergangenheit",
+    "english": "past"
+  },
+  {
+    "german": "Steuerung",
+    "english": "control"
+  },
+  {
+    "german": "Fahrzeugwerk",
+    "english": "vehicle plant"
+  },
+  {
+    "german": "Mitwirkung",
+    "english": "participation"
+  },
+  {
+    "german": "Maßnahmen",
+    "english": "measures / actions"
+  },
+  {
+    "german": "Belangen",
+    "english": "interests / concerns"
+  },
+  {
+    "german": "Einführung",
+    "english": "introduction"
+  },
+  {
+    "german": "Vorstellung",
+    "english": "presentation / concept"
+  },
+  {
+    "german": "nicht in Art und Weise",
+    "english": "not in any way"
+  },
+  {
+    "german": "Kennzahlen",
+    "english": "key performance indicators (KPIs)"
+  },
+  {
+    "german": "innerhalb",
+    "english": "within"
+  },
+  {
+    "german": "aktualisieren",
+    "english": "update"
+  },
+  {
+    "german": "Vergleiche",
+    "english": "comparisons"
+  },
+  {
+    "german": "verwendbar",
+    "english": "useable"
+  },
+  {
+    "german": "Organisationseinheit",
+    "english": "organizational unit"
+  },
+  {
+    "german": "Unterlagen",
+    "english": "documents"
+  },
+  {
+    "german": "wertvoll",
+    "english": "valuable"
+  },
+  {
+    "german": "verschieden",
+    "english": "different"
+  },
+  {
+    "german": "Rückblick",
+    "english": "review"
+  },
+  {
+    "german": "weiter",
+    "english": "further"
+  },
+  {
+    "german": "Herausforderungen",
+    "english": "challenges"
+  },
+  {
+    "german": "Etablierung",
+    "english": "establishment"
+  },
+  {
+    "german": "durchgängiger",
+    "english": "consistent"
+  },
+  {
+    "german": "Überführung",
+    "english": "transition"
+  },
+  {
+    "german": "Auftrag",
+    "english": "order / commission"
+  },
+  {
+    "german": "abwechslungsreiche",
+    "english": "varied"
+  },
+  {
+    "german": "befristeten",
+    "english": "temporary"
+  },
+  {
+    "german": "unter Anleitung",
+    "english": "under guidance"
+  },
+  {
+    "german": "feste",
+    "english": "fixed"
+  },
+  {
+    "german": "durchgeführt",
+    "english": "conducted"
+  },
+  {
+    "german": "Anmerkung",
+    "english": "comment / remark"
+  },
+  {
+    "german": "Kriterien",
+    "english": "criteria"
+  },
+  {
+    "german": "Bewertung",
+    "english": "evaluation"
+  },
+  {
+    "german": "Einschätzung",
+    "english": "assessment"
+  },
+  {
+    "german": "Stärken",
+    "english": "strengths"
+  },
+  {
+    "german": "Verbesserungsbereiche",
+    "english": "areas of improvement"
+  },
+  {
+    "german": "mehrmals durch",
+    "english": "repeatedly"
+  },
+  {
+    "german": "Reifegrad",
+    "english": "maturity level"
+  },
+  {
+    "german": "eingeführt",
+    "english": "introduced"
+  },
+  {
+    "german": "wandlungswillig",
+    "english": "willing to change"
+  },
+  {
+    "german": "Richtung vorgeben",
+    "english": "set a direction"
+  },
+  {
+    "german": "Grenzen",
+    "english": "boundaries / limits"
+  },
+  {
+    "german": "Inhalte",
+    "english": "contents"
+  },
+  {
+    "german": "Arbeitsweise",
+    "english": "working method"
+  },
+  {
+    "german": "Abholerlebnis",
+    "english": "pick-up experience"
+  },
+  {
+    "german": "Markenerlebnis",
+    "english": "brand experience"
+  },
+  {
+    "german": "Ebene",
+    "english": "level"
+  },
+  {
+    "german": "unterwegs",
+    "english": "on the go / en route"
+  },
+  {
+    "german": "Notwendigkeit",
+    "english": "necessity"
+  },
+  {
+    "german": "Abstimmung",
+    "english": "coordination"
+  },
+  {
+    "german": "selbstbewusst",
+    "english": "confident"
+  },
+  {
+    "german": "Weitblick",
+    "english": "foresight"
+  },
+  {
+    "german": "Wendepunkt",
+    "english": "turning point"
+  },
+  {
+    "german": "wirksame",
+    "english": "effective"
+  },
+  {
+    "german": "entscheidend",
+    "english": "critical"
+  },
+  {
+    "german": "bestimmt",
+    "english": "definite / certain"
+  },
+  {
+    "german": "Haltung",
+    "english": "attitude"
+  },
+  {
+    "german": "richtungsweisend",
+    "english": "pioneering"
+  },
+  {
+    "german": "realitätsnah",
+    "english": "realistic"
+  },
+  {
+    "german": "Stabil",
+    "english": "stable"
+  },
+  {
+    "german": "Freigaben",
+    "english": "releases"
+  },
+  {
+    "german": "Leitfaden",
+    "english": "guideline"
+  },
+  {
+    "german": "Risikobewertung",
+    "english": "risk assessment"
+  },
+  {
+    "german": "Prüfung",
+    "english": "inspection / test"
+  },
+  {
+    "german": "weiterer",
+    "english": "further"
+  },
+  {
+    "german": "Steckbriefe",
+    "english": "profiles"
+  },
+  {
+    "german": "durchgeführt",
+    "english": "conducted"
+  },
+  {
+    "german": "Behörden",
+    "english": "authorities"
+  },
+  {
+    "german": "einsteuern",
+    "english": "to control"
+  },
+  {
+    "german": "blöd",
+    "english": "stupid"
+  },
+  {
+    "german": "Blödsinn",
+    "english": "nonsense"
+  },
+  {
+    "german": "die Schulden",
+    "english": "debts"
+  },
+  {
+    "german": "die Schuld",
+    "english": "fault / blame"
+  },
+  {
+    "german": "sogar",
+    "english": "even"
+  },
+  {
+    "german": "gegenseitig",
+    "english": "mutual / each other"
+  },
+  {
+    "german": "einerseits",
+    "english": "on the one hand"
+  },
+  {
+    "german": "andererseits",
+    "english": "on the other hand"
+  },
+  {
+    "german": "Langfristig",
+    "english": "long-term"
+  },
+  {
+    "german": "Verkehr",
+    "english": "traffic"
+  },
+  {
+    "german": "Veränderungen",
+    "english": "changes"
+  },
+  {
+    "german": "Seiten",
+    "english": "pages"
+  },
+  {
+    "german": "ausgestattet",
+    "english": "equipped"
+  },
+  {
+    "german": "aufgerieben",
+    "english": "worn out"
+  },
+  {
+    "german": "die Branche",
+    "english": "the industry / sector"
+  },
+  {
+    "german": "Kompetenzbereich",
+    "english": "area of competence"
+  },
+  {
+    "german": "Untergang",
+    "english": "demise / downfall"
+  },
+  {
+    "german": "Margen",
+    "english": "margins"
+  },
+  {
+    "german": "Umbrüchen",
+    "english": "upheavals / disruptions"
+  },
+  {
+    "german": "Wertschöpfung",
+    "english": "value creation"
+  },
+  {
+    "german": "auf Augenhöhe",
+    "english": "on equal footing"
+  },
+  {
+    "german": "Spitzenreiter",
+    "english": "leaders / front runners"
+  },
+  {
+    "german": "äußerst",
+    "english": "extremely"
+  },
+  {
+    "german": "Gebiet / Bereich",
+    "english": "field / area"
+  },
+  {
+    "german": "Verhalten",
+    "english": "behavior"
+  },
+  {
+    "german": "Übergang",
+    "english": "transition"
+  },
+  {
+    "german": "sondern",
+    "english": "but"
+  },
+  {
+    "german": "aufgrund",
+    "english": "because of"
+  },
+  {
+    "german": "Wettbewerben",
+    "english": "competitions"
+  },
+  {
+    "german": "Hintertreffen gegenüber",
+    "english": "at a disadvantage to"
+  },
+  {
+    "german": "gleichzeitig",
+    "english": "simultaneously"
+  },
+  {
+    "german": "rückläufig",
+    "english": "declining"
+  },
+  {
+    "german": "Gewicht",
+    "english": "weight"
+  },
+  {
+    "german": "fortsetzen",
+    "english": "continue"
+  },
+  {
+    "german": "betrifft",
+    "english": "concerns / pertains to"
+  },
+  {
+    "german": "Verbrennungsmotor",
+    "english": "combustion engine"
+  },
+  {
+    "german": "Antriebsstrang",
+    "english": "drivetrain"
+  },
+  {
+    "german": "Schaltgetriebe",
+    "english": "gearbox / transmission"
+  },
+  {
+    "german": "Bauteile",
+    "english": "components"
+  },
+  {
+    "german": "sämtliche",
+    "english": "all"
+  },
+  {
+    "german": "gefertigt",
+    "english": "manufactured"
+  },
+  {
+    "german": "Vergaben",
+    "english": "awards / allocations"
+  },
+  {
+    "german": "Vorgaben",
+    "english": "requirements"
+  },
+  {
+    "german": "mittlerweile",
+    "english": "by now / in the meantime"
+  },
+  {
+    "german": "Zulieferbranche",
+    "english": "supplier industry"
+  },
+  {
+    "german": "neben",
+    "english": "besides / in addition to"
+  },
+  {
+    "german": "lieber",
+    "english": "rather"
+  },
+  {
+    "german": "weniger",
+    "english": "less"
+  },
+  {
+    "german": "Gewinnspanne",
+    "english": "profit margin"
+  },
+  {
+    "german": "Gewinneinbrüche",
+    "english": "profit slumps"
+  },
+  {
+    "german": "geringfügig",
+    "english": "minor / slight"
+  },
+  {
+    "german": "Umsatz",
+    "english": "revenue / turnover"
+  },
+  {
+    "german": "erlitten",
+    "english": "suffered"
+  },
+  {
+    "german": "nachzeichnen",
+    "english": "to trace / to replicate"
+  },
+  {
+    "german": "zeichnen",
+    "english": "to draw"
+  },
+  {
+    "german": "Fertigungsprozess",
+    "english": "manufacturing process"
+  },
+  {
+    "german": "nahezu",
+    "english": "almost / nearly"
+  },
+  {
+    "german": "unabhängig",
+    "english": "independently"
+  },
+  {
+    "german": "De facto",
+    "english": "de facto / in fact"
+  },
+  {
+    "german": "benötigt",
+    "english": "requires"
+  },
+  {
+    "german": "ansiedeln",
+    "english": "to settle / to establish"
+  },
+  {
+    "german": "derzeit",
+    "english": "currently"
+  },
+  {
+    "german": "heraus",
+    "english": "out / forth"
+  },
+  {
+    "german": "namhafte",
+    "english": "well-known / reputable"
+  },
+  {
+    "german": "verlagern",
+    "english": "to relocate / to shift"
+  },
+  {
+    "german": "die Fertigung",
+    "english": "manufacturing / production"
+  },
+  {
+    "german": "überwiegend",
+    "english": "predominantly / mostly"
+  },
+  {
+    "german": "unterbrochen",
+    "english": "interrupted"
+  },
+  {
+    "german": "zwar",
+    "english": "indeed / admittedly"
+  },
+  {
+    "german": "damit",
+    "english": "so that / in order to"
+  },
+  {
+    "german": "ausgerechnet",
+    "english": "particularly / of all things"
+  },
+  {
+    "german": "Heimatstandort",
+    "english": "home location"
+  },
+  {
+    "german": "Branchengrößen",
+    "english": "industry giants / leaders"
+  },
+  {
+    "german": "Schlüssel",
+    "english": "key / conclusion"
+  },
+  {
+    "german": "Eintrittskarte",
+    "english": "ticket / admission ticket"
+  },
+  {
+    "german": "Nachbereitung",
+    "english": "follow-up / debriefing"
+  },
+  {
+    "german": "Durchführung",
+    "english": "execution / implementation"
+  },
+  {
+    "german": "Auditfeststellung",
+    "english": "audit findings"
+  },
+  {
+    "german": "Erforderung",
+    "english": "requirement"
+  },
+  {
+    "german": "ressortübergreifend",
+    "english": "interdepartmental"
+  },
+  {
+    "german": "freigegebene",
+    "english": "released / approved"
+  },
+  {
+    "german": "Konformitätsabgleich",
+    "english": "compliance check"
+  },
+  {
+    "german": "Freiheit",
+    "english": "freedom"
+  },
+  {
+    "german": "Vorgehensweisen",
+    "english": "approaches / methods"
+  },
+  {
+    "german": "Umgang",
+    "english": "handling / dealing with"
+  },
+  {
+    "german": "sondern",
+    "english": "but"
+  },
+  {
+    "german": "Ansprechpartner",
+    "english": "contact person"
+  },
+  {
+    "german": "Zielsetzung",
+    "english": "objective / goal setting"
+  },
+  {
+    "german": "einfordern",
+    "english": "to demand / to request"
+  },
+  {
+    "german": "Unterstützung",
+    "english": "support"
+  },
+  {
+    "german": "Ablaufbeschreibung",
+    "english": "process description"
+  },
+  {
+    "german": "mitgeteilt",
+    "english": "informed / communicated"
+  },
+  {
+    "german": "Fachbereich",
+    "english": "department / field of expertise"
+  },
+  {
+    "german": "Wiedervorlage",
+    "english": "reminder / follow-up"
+  },
+  {
+    "german": "Berichtswesen",
+    "english": "reporting"
+  },
+  {
+    "german": "Spielregeln",
+    "english": "rules of the game"
+  },
+  {
+    "german": "Realisierung",
+    "english": "realization / implementation"
+  },
+  {
+    "german": "Beteiligte",
+    "english": "participants / involved parties"
+  },
+  {
+    "german": "Entscheidung",
+    "english": "decision"
+  },
+  {
+    "german": "Beschreibung",
+    "english": "description"
+  },
+  {
+    "german": "Vergleich",
+    "english": "comparison"
+  },
+  {
+    "german": "gewünscht",
+    "english": "desired / wished"
+  },
+  {
+    "german": "Meldung",
+    "english": "notification / report"
+  },
+  {
+    "german": "Erfüllung",
+    "english": "fulfillment"
+  },
+  {
+    "german": "Abweichung",
+    "english": "deviation / variance"
+  },
+  {
+    "german": "Kennzahlen",
+    "english": "key figures / metrics"
+  },
+  {
+    "german": "sinnvoll",
+    "english": "meaningful / sensible"
+  },
+  {
+    "german": "Qualifizierung",
+    "english": "qualification / training"
+  },
+  {
+    "german": "Fachbereich",
+    "english": "department / field of expertise"
+  },
+  {
+    "german": "ausreichend",
+    "english": "sufficient"
+  },
+  {
+    "german": "gemäß",
+    "english": "according to / as per"
+  },
+  {
+    "german": "Vorgehensweise",
+    "english": "approach / procedure"
+  },
+  {
+    "german": "Festlegung",
+    "english": "determination / definition"
+  },
+  {
+    "german": "Anforderungen",
+    "english": "requirements"
+  },
+  {
+    "german": "Fristen",
+    "english": "deadlines / time limits"
+  },
+  {
+    "german": "stabiler Betrieb",
+    "english": "stable operation"
+  },
+  {
+    "german": "Fehlerbehebung",
+    "english": "error correction / troubleshooting"
+  },
+  {
+    "german": "verteilt",
+    "english": "distributed"
+  },
+  {
+    "german": "Nebenkosten",
+    "english": "additional costs"
+  },
+  {
+    "german": "Wirkung",
+    "english": "effect / impact"
+  },
+  {
+    "german": "Anwendung",
+    "english": "application / use"
+  },
+  {
+    "german": "etabliert",
+    "english": "established"
+  },
+  {
+    "german": "durchgängige",
+    "english": "consistent / continuous"
+  },
+  {
+    "german": "Befähiger",
+    "english": "enabler"
+  },
+  {
+    "german": "beauftragt",
+    "english": "commissioned / tasked"
+  },
+  {
+    "german": "speziell",
+    "english": "special / specific"
+  },
+  {
+    "german": "Anlauf",
+    "english": "start-up / ramp-up"
+  },
+  {
+    "german": "Anbau",
+    "english": "extension / annex"
+  },
+  {
+    "german": "Schnittstellenpartner",
+    "english": "interface partner"
+  },
+  {
+    "german": "Abstimmung",
+    "english": "coordination / alignment"
+  },
+  {
+    "german": "Steckbriefe",
+    "english": "profiles / briefs"
+  },
+  {
+    "german": "Inhaltlicher",
+    "english": "content-related"
+  },
+  {
+    "german": "Zielzustand",
+    "english": "target state / desired state"
+  },
+  {
+    "german": "Veränderungen",
+    "english": "changes"
+  },
+  {
+    "german": "spürbar",
+    "english": "tangible / noticeable"
+  },
+  {
+    "german": "Ausstattung",
+    "english": "equipment / facilities"
+  },
+  {
+    "german": "Geldmittel",
+    "english": "funds / financial resources"
+  },
+  {
+    "german": "Bestandteil",
+    "english": "component / part"
+  },
+  {
+    "german": "Linienaufgaben",
+    "english": "line tasks / operational tasks"
+  },
+  {
+    "german": "ausgerichtet",
+    "english": "aligned / oriented"
+  },
+  {
+    "german": "Verfügbarkeit",
+    "english": "availability"
+  },
+  {
+    "german": "Vorgaben",
+    "english": "requirements / directives"
+  },
+  {
+    "german": "offene Entscheidungen",
+    "english": "outstanding decisions"
+  },
+  {
+    "german": "Überarbeitung",
+    "english": "revision / review"
+  },
+  {
+    "german": "Überprüfung",
+    "english": "verification / review"
+  },
+  {
+    "german": "Abgrenzung",
+    "english": "delineation / definition"
+  },
+  {
+    "german": "Ausplanung",
+    "english": "planning / scheduling"
+  },
+  {
+    "german": "Beschluss",
+    "english": "resolution / decision"
+  },
+  {
+    "german": "Bepunktung",
+    "english": "scoring"
+  },
+  {
+    "german": "vor allem",
+    "english": "especially / above all"
+  },
+  {
+    "german": "Handlungen",
+    "english": "actions"
+  },
+  {
+    "german": "umfangreichen",
+    "english": "extensive / comprehensive"
+  },
+  {
+    "german": "wesentlich",
+    "english": "essential"
+  },
+  {
+    "german": "Führungskraft",
+    "english": "manager / executive"
+  },
+  {
+    "german": "eingebunden",
+    "english": "integrated / involved"
+  },
+  {
+    "german": "neu hinzukommende",
+    "english": "newly added"
+  },
+  {
+    "german": "hinreichend",
+    "english": "sufficient"
+  },
+  {
+    "german": "Feststellung",
+    "english": "finding / determination"
+  },
+  {
+    "german": "Abstimmung",
+    "english": "coordination / vote"
+  },
+  {
+    "german": "Lenkungs",
+    "english": "steering"
+  },
+  {
+    "german": "Einsatzmöglichkeiten",
+    "english": "possible uses / applications"
+  },
+  {
+    "german": "Vorgehensweise",
+    "english": "approach / method"
+  },
+  {
+    "german": "jeweiligen",
+    "english": "respective"
+  },
+  {
+    "german": "Vorstellung",
+    "english": "presentation / idea"
+  },
+  {
+    "german": "einzelner",
+    "english": "single"
+  },
+  {
+    "german": "übernahmen",
+    "english": "took over / acquisitions"
+  },
+  {
+    "german": "Bewertung",
+    "english": "evaluation / assessment"
+  },
+  {
+    "german": "Herausforderungen",
+    "english": "challenges"
+  },
+  {
+    "german": "Anforderungen",
+    "english": "requirements"
+  },
+  {
+    "german": "Einbindung",
+    "english": "integration"
+  },
+  {
+    "german": "Mindestumfang",
+    "english": "minimum scope"
+  },
+  {
+    "german": "jeweils",
+    "english": "respectively / each"
+  },
+  {
+    "german": "Übertrag",
+    "english": "transfer"
+  },
+  {
+    "german": "bezüglich",
+    "english": "regarding / concerning"
+  },
+  {
+    "german": "langfristige",
+    "english": "long-term"
+  },
+  {
+    "german": "Sicherstellung",
+    "english": "ensuring / assurance"
+  },
+  {
+    "german": "ungefähr",
+    "english": "approximately"
+  },
+  {
+    "german": "Überführung",
+    "english": "transfer / transition"
+  },
+  {
+    "german": "Seite",
+    "english": "page"
+  },
+  {
+    "german": "Grundstruktur",
+    "english": "basic structure"
+  },
+  {
+    "german": "Umsetzung",
+    "english": "implementation"
+  },
+  {
+    "german": "Führungskräfte",
+    "english": "executives / managers"
+  },
+  {
+    "german": "zufrieden",
+    "english": "satisfied"
+  },
+  {
+    "german": "Verlag",
+    "english": "publisher"
+  },
+  {
+    "german": "Kampf",
+    "english": "fight / battle / struggle"
+  },
+  {
+    "german": "Tätigkeiten",
+    "english": "activities / tasks"
+  },
+  {
+    "german": "sich ärgern",
+    "english": "to be annoyed / to get upset"
+  },
+  {
+    "german": "Abstimmung",
+    "english": "coordination / vote"
+  },
+  {
+    "german": "Q-Vergabedokumente",
+    "english": "Q-award documents"
+  },
+  {
+    "german": "Q-Anforderungen",
+    "english": "Q-requirements"
+  },
+  {
+    "german": "Laufwerk",
+    "english": "drive (computer)"
+  },
+  {
+    "german": "Auswertung",
+    "english": "evaluation / analysis"
+  },
+  {
+    "german": "Eintragen",
+    "english": "to register / to enter"
+  },
+  {
+    "german": "gesetzlichen",
+    "english": "legal"
+  },
+  {
+    "german": "Erstellung",
+    "english": "creation / production"
+  },
+  {
+    "german": "Durchführung",
+    "english": "execution / implementation"
+  },
+  {
+    "german": "Gesamtfahrzeugtests",
+    "english": "whole vehicle tests"
+  },
+  {
+    "german": "Behörden",
+    "english": "authorities / agencies"
+  },
+  {
+    "german": "Dienste",
+    "english": "services"
+  },
+  {
+    "german": "Nachfolger",
+    "english": "successor"
+  },
+  {
+    "german": "erledigt",
+    "english": "completed / done"
+  },
+  {
+    "german": "Unterlage",
+    "english": "document / supporting material"
+  },
+  {
+    "german": "wird ausgeführt",
+    "english": "is executed / is being carried out"
+  },
+  {
+    "german": "Lenkung",
+    "english": "steering / control"
+  },
+  {
+    "german": "Umfeld",
+    "english": "environment / surroundings"
+  },
+  {
+    "german": "Nachhaltigkeit",
+    "english": "sustainability"
+  },
+  {
+    "german": "Entscheidung",
+    "english": "decision"
+  },
+  {
+    "german": "Schiedsrichter",
+    "english": "referee / arbitrator"
+  },
+  {
+    "german": "Taktgeber",
+    "english": "pacemaker / metronome"
+  },
+  {
+    "german": "Wirksamkeit",
+    "english": "effectiveness"
+  },
+  {
+    "german": "Wurzel",
+    "english": "root"
+  },
+  {
+    "german": "Zustand",
+    "english": "condition / state"
+  },
+  {
+    "german": "messbaren",
+    "english": "measurable"
+  },
+  {
+    "german": "Durchdringung",
+    "english": "penetration / permeation"
+  },
+  {
+    "german": "Vorgabe",
+    "english": "specification / directive"
+  },
+  {
+    "german": "Befähiger",
+    "english": "enabler"
+  },
+  {
+    "german": "Anspruch",
+    "english": "claim / demand"
+  },
+  {
+    "german": "Bewertung",
+    "english": "evaluation / assessment"
+  },
+  {
+    "german": "Mitschrift",
+    "english": "transcript / minutes"
+  },
+  {
+    "german": "Ausrichtung",
+    "english": "orientation / alignment"
+  },
+  {
+    "german": "Vorgehen",
+    "english": "approach / procedure"
+  },
+  {
+    "german": "selbstverständlich",
+    "english": "obvious / self-evident / natural"
+  },
+  {
+    "german": "einverstanden",
+    "english": "agreed / in agreement"
+  },
+  {
+    "german": "verlieren",
+    "english": "to lose"
+  },
+  {
+    "german": "verloren",
+    "english": "lost"
+  },
+  {
+    "german": "Ergebnisse auswerten",
+    "english": "to evaluate results"
+  },
+  {
+    "german": "Maßnahmen ableiten",
+    "english": "to derive measures"
+  },
+  {
+    "german": "vorstellen",
+    "english": "to present / to introduce"
+  },
+  {
+    "german": "verbessern",
+    "english": "to improve"
+  },
+  {
+    "german": "erkunden",
+    "english": "to explore / to investigate"
+  },
+  {
+    "german": "stattfinden",
+    "english": "to take place / to occur"
+  },
+  {
+    "german": "verlassen",
+    "english": "to leave / to abandon"
+  },
+  {
+    "german": "losgehen",
+    "english": "to start / to get going"
+  },
+  {
+    "german": "erzeugen",
+    "english": "to generate / to produce"
+  },
+  {
+    "german": "durchführen",
+    "english": "to carry out / to conduct"
+  },
+  {
+    "german": "vermissen",
+    "english": "to miss"
+  },
+  {
+    "german": "auswerten",
+    "english": "to evaluate / to analyze"
+  },
+  {
+    "german": "ableiten",
+    "english": "to derive / to deduce"
+  },
+  {
+    "german": "abstimmen",
+    "english": "to coordinate / to tune / to vote"
+  },
+  {
+    "german": "erstellen und vorstellen",
+    "english": "to create and present"
+  },
+  {
+    "german": "erzielen",
+    "english": "to achieve / to attain"
+  },
+  {
+    "german": "erarbeiten",
+    "english": "to develop / to work out"
+  },
+  {
+    "german": "festlegen",
+    "english": "to define / to set"
+  },
+  {
+    "german": "erheben",
+    "english": "to raise / to collect"
+  },
+  {
+    "german": "liefern",
+    "english": "to deliver / to supply"
+  },
+  {
+    "german": "berücksichtigen",
+    "english": "to consider / to take into account"
+  },
+  {
+    "german": "übersetzen",
+    "english": "to translate"
+  },
+  {
+    "german": "einbeziehen",
+    "english": "to include / to involve"
+  },
+  {
+    "german": "erreichen",
+    "english": "to reach / to achieve"
+  },
+  {
+    "german": "ausbauen",
+    "english": "to expand / to extend"
+  },
+  {
+    "german": "begleiten",
+    "english": "to accompany / to escort"
+  },
+  {
+    "german": "bewegen",
+    "english": "to move"
+  },
+  {
+    "german": "weiterleiten an",
+    "english": "to forward to"
+  },
+  {
+    "german": "erledigen",
+    "english": "to accomplish / to take care of"
+  },
+  {
+    "german": "einleiten",
+    "english": "to initiate / to start"
+  },
+  {
+    "german": "sicherstellen",
+    "english": "to ensure / to secure"
+  },
+  {
+    "german": "werden",
+    "english": "to become"
+  },
+  {
+    "german": "wählen",
+    "english": "to choose / to elect"
+  },
+  {
+    "german": "umdenken",
+    "english": "to reconsider / to rethink"
+  },
+  {
+    "german": "umschulen",
+    "english": "to retrain"
+  },
+  {
+    "german": "besitzen",
+    "english": "to own / to possess"
+  },
+  {
+    "german": "Aufatmen",
+    "english": "to breathe a sigh of relief"
+  },
+  {
+    "german": "entscheiden",
+    "english": "to decide"
+  },
+  {
+    "german": "beobachten",
+    "english": "to observe"
+  },
+  {
+    "german": "beraten",
+    "english": "to advise / to consult"
+  },
+  {
+    "german": "einbüßen",
+    "english": "to lose / to forfeit"
+  },
+  {
+    "german": "herstellen",
+    "english": "to produce / to manufacture"
+  },
+  {
+    "german": "entstehen",
+    "english": "to arise / to develop"
+  },
+  {
+    "german": "erschließen",
+    "english": "to tap / to access / to unlock"
+  },
+  {
+    "german": "verursachen",
+    "english": "to cause"
+  },
+  {
+    "german": "agieren",
+    "english": "to act"
+  },
+  {
+    "german": "Potenziale freisetzen",
+    "english": "to unlock potential / to unleash potential"
+  },
+  {
+    "german": "glaubwürdig bleiben",
+    "english": "to remain credible"
+  },
+  {
+    "german": "mit Kritik umgehen",
+    "english": "to deal with criticism"
+  },
+  {
+    "german": "befähigen",
+    "english": "to empower / to enable"
+  },
+  {
+    "german": "beschreiben",
+    "english": "to describe"
+  },
+  {
+    "german": "erarbeiten",
+    "english": "to work out / to develop"
+  },
+  {
+    "german": "umsetzen",
+    "english": "to implement / to put into practice"
+  },
+  {
+    "german": "durchgehen",
+    "english": "to go through / to review"
+  },
+  {
+    "german": "daraufgehen",
+    "english": "to go after it / to seize"
+  },
+  {
+    "german": "anschauen",
+    "english": "to look at / to view"
+  },
+  {
+    "german": "zur Verfügung stehen",
+    "english": "to be available"
+  },
+  {
+    "german": "versuchen",
+    "english": "to try / to attempt"
+  },
+  {
+    "german": "auskennen",
+    "english": "to be familiar with"
+  },
+  {
+    "german": "Erfahrungen sammeln",
+    "english": "to gain experience"
+  },
+  {
+    "german": "sicherstellen",
+    "english": "to ensure / to make sure"
+  },
+  {
+    "german": "aufstellen",
+    "english": "to set up / to establish"
+  },
+  {
+    "german": "sichten",
+    "english": "to review / to examine"
+  },
+  {
+    "german": "durchführen",
+    "english": "to conduct / to perform"
+  },
+  {
+    "german": "gewinnen",
+    "english": "to win / to gain"
+  },
+  {
+    "german": "betrachten",
+    "english": "to consider / to view"
+  },
+  {
+    "german": "halten",
+    "english": "to hold / to keep"
+  },
+  {
+    "german": "einbeziehen",
+    "english": "to include / to involve"
+  },
+  {
+    "german": "nennen",
+    "english": "to name / to mention"
+  },
+  {
+    "german": "aufführen",
+    "english": "to list / to perform"
+  },
+  {
+    "german": "entsprechen",
+    "english": "to correspond / to meet"
+  },
+  {
+    "german": "teilen",
+    "english": "to share / to divide"
+  },
+  {
+    "german": "übertragen",
+    "english": "to transfer / to transmit"
+  },
+  {
+    "german": "behalten",
+    "english": "to retain / to keep"
+  },
+  {
+    "german": "warten auf",
+    "english": "to wait for"
+  },
+  {
+    "german": "teilnehmen an",
+    "english": "to participate in / to take part in"
+  },
+  {
+    "german": "Ich nehme an einem Kurs teil",
+    "english": "I am participating in a course"
+  },
+  {
+    "german": "reden über",
+    "english": "to talk about"
+  },
+  {
+    "german": "Ich rede mit dir über Kunst",
+    "english": "I talk to you about art"
+  },
+  {
+    "german": "Ich gehöre zu dir",
+    "english": "I belong to you"
+  },
+  {
+    "german": "weiterleiten an",
+    "english": "to forward to"
+  },
+  {
+    "german": "sammeln",
+    "english": "to collect / to gather"
+  },
+  {
+    "german": "antworten",
+    "english": "to respond / to answer (someone)"
+  },
+  {
+    "german": "antworten auf",
+    "english": "to answer (something)"
+  },
+  {
+    "german": "beantworten",
+    "english": "to answer (something)"
+  },
+  {
+    "german": "sich einarbeiten",
+    "english": "to familiarize oneself / to get accustomed"
+  },
+  {
+    "german": "sich wohl fühlen",
+    "english": "to feel comfortable / to feel at ease"
+  },
+  {
+    "german": "unzureichend",
+    "english": "insufficient"
+  },
+  {
+    "german": "falsch nachweisen",
+    "english": "to prove wrong"
+  },
+  {
+    "german": "defizitäre Freigaben",
+    "english": "deficient releases"
+  },
+  {
+    "german": "vorhanden",
+    "english": "available / present"
+  },
+  {
+    "german": "Leitsystem",
+    "english": "guidance system / navigation system"
+  },
+  {
+    "german": "Auditfeststellung",
+    "english": "audit finding"
+  },
+  {
+    "german": "Abweichung",
+    "english": "deviation"
+  },
+  {
+    "german": "Bearbeitung",
+    "english": "processing / editing"
+  },
+  {
+    "german": "Haftungsfall",
+    "english": "case of liability"
+  },
+  {
+    "german": "darstellen",
+    "english": "to represent / to depict"
+  },
+  {
+    "german": "erhebliche",
+    "english": "significant"
+  },
+  {
+    "german": "unmittelbaren",
+    "english": "immediate"
+  },
+  {
+    "german": "Rot erst bei Gefährdung Serienanlauf",
+    "english": "Red only when series start-up is at risk"
+  },
+  {
+    "german": "Sollzustand",
+    "english": "target state / desired state"
+  },
+  {
+    "german": "Leitfaden",
+    "english": "guideline"
+  },
+  {
+    "german": "widersprüchlich",
+    "english": "contradictory"
+  },
+  {
+    "german": "Gehen Sie wie folgt vor:",
+    "english": "proceed as follows"
+  },
+  {
+    "german": "Kannst du mir zeigen?",
+    "english": "Can you show me?"
+  },
+  {
+    "german": "Das ist der Hammer!",
+    "english": "That's amazing! / That's awesome!"
+  },
+  {
+    "german": "gleich um die Ecke",
+    "english": "just around the corner"
+  },
+  {
+    "german": "Qualität statt Quantität",
+    "english": "quality over quantity"
+  },
+  {
+    "german": "auf dem Weg dahin",
+    "english": "on the way there"
+  },
+  {
+    "german": "Kapa",
+    "english": "capacity (abbreviation)"
+  },
+  {
+    "german": "pflegen",
+    "english": "to maintain / to care for"
+  },
+  {
+    "german": "unterbrechen",
+    "english": "to interrupt"
+  },
+  {
+    "german": "übernimmt",
+    "english": "takes over"
+  },
+  {
+    "german": "kann sein",
+    "english": "may be / can be"
+  },
+  {
+    "german": "Fortgeschrittene",
+    "english": "advanced (as in level)"
+  },
+  {
+    "german": "See",
+    "english": "lake"
+  },
+  {
+    "german": "Insel",
+    "english": "island"
+  },
+  {
+    "german": "nachhaltiger",
+    "english": "more sustainable"
+  },
+  {
+    "german": "nachhaltig",
+    "english": "sustainable"
+  },
+  {
+    "german": "Vorgehensweise",
+    "english": "approach / procedure / method"
+  },
+  {
+    "german": "müde",
+    "english": "tired"
+  },
+  {
+    "german": "erinnern",
+    "english": "to remember"
+  },
+  {
+    "german": "schießen",
+    "english": "to shoot"
+  },
+  {
+    "german": "besiegen",
+    "english": "to defeat"
+  },
+  {
+    "german": "verpassen",
+    "english": "to miss"
+  },
+  {
+    "german": "Schmerzmittel",
+    "english": "painkiller"
+  },
+  {
+    "german": "beeilen",
+    "english": "to hurry / to rush"
+  },
+  {
+    "german": "gelingen",
+    "english": "to succeed"
+  },
+  {
+    "german": "Sieger",
+    "english": "winner / victor"
+  },
+  {
+    "german": "werfen",
+    "english": "to throw / to toss"
+  },
+  {
+    "german": "das Bauernhaus",
+    "english": "farmhouse"
+  },
+  {
+    "german": "das Hochhaus",
+    "english": "high-rise building"
+  },
+  {
+    "german": "Mehrfamilienhaus",
+    "english": "multi-family house"
+  },
+  {
+    "german": "Wolkenkratzer",
+    "english": "skyscraper"
+  },
+  {
+    "german": "hässlich",
+    "english": "ugly"
+  },
+  {
+    "german": "die Villa",
+    "english": "villa / mansion"
+  },
+  {
+    "german": "Wohnfläche",
+    "english": "living space / floor area"
+  },
+  {
+    "german": "Scheune",
+    "english": "barn"
+  },
+  {
+    "german": "Bauernhof",
+    "english": "farm"
+  },
+  {
+    "german": "Stellplatz",
+    "english": "parking space / parking spot"
+  },
+  {
+    "german": "Stall",
+    "english": "stable / barn"
+  },
+  {
+    "german": "Bodenheizung",
+    "english": "floor heating / underfloor heating"
+  },
+  {
+    "german": "Ölheizung",
+    "english": "oil heating"
+  },
+  {
+    "german": "Gasheizung",
+    "english": "gas heating"
+  },
+  {
+    "german": "die Altstadt",
+    "english": "old town"
+  },
+  {
+    "german": "in der Umgebung von München",
+    "english": "in the vicinity of Munich"
+  },
+  {
+    "german": "am Stadtrand",
+    "english": "on the outskirts of town"
+  },
+  {
+    "german": "der Vorort",
+    "english": "suburb"
+  },
+  {
+    "german": "Die Fliesen",
+    "english": "tiles"
+  },
+  {
+    "german": "Sendungen",
+    "english": "broadcasts / programs"
+  },
+  {
+    "german": "Sendung",
+    "english": "broadcast / program"
+  },
+  {
+    "german": "Spielfilm",
+    "english": "feature film"
+  },
+  {
+    "german": "Werbung",
+    "english": "advertising"
+  },
+  {
+    "german": "Seifenoper",
+    "english": "soap opera"
+  },
+  {
+    "german": "Tatort",
+    "english": "crime scene / TV series \"Tatort\""
+  },
+  {
+    "german": "Krimiserie",
+    "english": "crime series"
+  },
+  {
+    "german": "Krimi",
+    "english": "crime story / thriller"
+  },
+  {
+    "german": "Serie",
+    "english": "series"
+  },
+  {
+    "german": "lustig",
+    "english": "funny"
+  },
+  {
+    "german": "spannend",
+    "english": "exciting"
+  },
+  {
+    "german": "Zeichentrickfilm",
+    "english": "animated film / cartoon"
+  },
+  {
+    "german": "Horrorfilm",
+    "english": "horror film"
+  },
+  {
+    "german": "Thriller",
+    "english": "thriller"
+  },
+  {
+    "german": "unterhaltsam",
+    "english": "entertaining"
+  },
+  {
+    "german": "Unterhaltung",
+    "english": "entertainment"
+  },
+  {
+    "german": "traurig",
+    "english": "sad"
+  },
+  {
+    "german": "dramatisch",
+    "english": "dramatic"
+  },
+  {
+    "german": "tragisch",
+    "english": "tragic"
+  },
+  {
+    "german": "Komödie",
+    "english": "comedy"
+  },
+  {
+    "german": "Liebesfilm",
+    "english": "romantic film"
+  },
+  {
+    "german": "Romanze",
+    "english": "romance"
+  },
+  {
+    "german": "romantisch",
+    "english": "romantic"
+  },
+  {
+    "german": "Nachrichten",
+    "english": "news"
+  },
+  {
+    "german": "informativ",
+    "english": "informative"
+  },
+  {
+    "german": "Dokumentation",
+    "english": "documentary"
+  },
+  {
+    "german": "Reportage",
+    "english": "report"
+  },
+  {
+    "german": "Kinderfilm",
+    "english": "children's film"
+  },
+  {
+    "german": "Talkshow",
+    "english": "talk show"
+  },
+  {
+    "german": "Sportsendung",
+    "english": "sports broadcast"
+  },
+  {
+    "german": "langweilig",
+    "english": "boring"
+  },
+  {
+    "german": "Magazin",
+    "english": "magazine"
+  },
+  {
+    "german": "Fernsehprogramm",
+    "english": "television program"
+  },
+  {
+    "german": "beginnen",
+    "english": "to begin"
+  },
+  {
+    "german": "anfangen",
+    "english": "to start"
+  },
+  {
+    "german": "enden",
+    "english": "to end"
+  },
+  {
+    "german": "aufhören",
+    "english": "to stop"
+  },
+  {
+    "german": "Radio",
+    "english": "radio"
+  },
+  {
+    "german": "Radioprogramm",
+    "english": "radio program"
+  },
+  {
+    "german": "einschalten",
+    "english": "to turn on"
+  },
+  {
+    "german": "ausschalten",
+    "english": "to turn off"
+  },
+  {
+    "german": "zappen",
+    "english": "to channel surf"
+  },
+  {
+    "german": "umschalten",
+    "english": "to switch channels"
+  },
+  {
+    "german": "in Maßen",
+    "english": "in moderation"
+  },
+  {
+    "german": "Suchmaschine",
+    "english": "search engine"
+  },
+  {
+    "german": "soziale Netzwerke",
+    "english": "social networks"
+  },
+  {
+    "german": "online",
+    "english": "online"
+  },
+  {
+    "german": "Homepage",
+    "english": "homepage"
+  },
+  {
+    "german": "Internetanbieter",
+    "english": "internet provider"
+  },
+  {
+    "german": "herunterladen",
+    "english": "to download"
+  },
+  {
+    "german": "installieren",
+    "english": "to install"
+  },
+  {
+    "german": "hochladen",
+    "english": "to upload"
+  },
+  {
+    "german": "Tageszeitung",
+    "english": "daily newspaper"
+  },
+  {
+    "german": "Süddeutsche Zeitung",
+    "english": "Süddeutsche Zeitung "
+  },
+  {
+    "german": "Zeit",
+    "english": "The Time"
+  },
+  {
+    "german": "sensationsgeil",
+    "english": "sensationalistic"
+  },
+  {
+    "german": "Wochenzeitung",
+    "english": "weekly newspaper"
+  },
+  {
+    "german": "Zeitschriften",
+    "english": "magazines"
+  },
+  {
+    "german": "Prospekte",
+    "english": "brochures"
+  },
+  {
+    "german": "Wurfsendungen",
+    "english": "mail shots"
+  },
+  {
+    "german": "Cosmopolitan",
+    "english": "Cosmopolitan "
+  },
+  {
+    "german": "Wirtschaftsmagazin",
+    "english": "business magazine"
+  },
+  {
+    "german": "Modemagazin",
+    "english": "fashion magazine"
+  },
+  {
+    "german": "Musikzeitschrift",
+    "english": "music magazine"
+  },
+  {
+    "german": "Boulevardmagazin",
+    "english": "tabloid magazine"
+  },
+  {
+    "german": "Bild der Frau",
+    "english": "Bild der Frau (magazine)"
+  },
+  {
+    "german": "Lehrbuch",
+    "english": "textbook"
+  },
+  {
+    "german": "Roman",
+    "english": "novel"
+  },
+  {
+    "german": "Kochbuch",
+    "english": "cookbook"
+  },
+  {
+    "german": "Sachbuch",
+    "english": "non-fiction book"
+  },
+  {
+    "german": "Bildband",
+    "english": "illustrated book"
+  },
+  {
+    "german": "Bilderbuch",
+    "english": "picture book"
+  },
+  {
+    "german": "Bedienungsanleitung",
+    "english": "instruction manual"
+  },
+  {
+    "german": "Enzyklopädie",
+    "english": "encyclopedia"
+  },
+  {
+    "german": "Wörterbuch",
+    "english": "dictionary"
+  },
+  {
+    "german": "Unterschied",
+    "english": "difference"
+  },
+  {
+    "german": "Gymnasium",
+    "english": "grammar school"
+  },
+  {
+    "german": "Realschule",
+    "english": "secondary school"
+  },
+  {
+    "german": "Hauptschule",
+    "english": "general school"
+  },
+  {
+    "german": "Gymnasiasten",
+    "english": "grammar school students"
+  },
+  {
+    "german": "Abitur",
+    "english": "(A-level) graduation"
+  },
+  {
+    "german": "Tourismuskauffrau",
+    "english": "tourism clerk"
+  },
+  {
+    "german": "Ausbildung",
+    "english": "education / training"
+  },
+  {
+    "german": "Berufsschule",
+    "english": "vocational school"
+  },
+  {
+    "german": "Betrieb",
+    "english": "company / operation"
+  },
+  {
+    "german": "Friseurin",
+    "english": "hairdresser (female)"
+  },
+  {
+    "german": "Schreinerin",
+    "english": "carpenter (female)"
+  },
+  {
+    "german": "Chancengleichheit",
+    "english": "equality of opportunity"
+  },
+  {
+    "german": "Chancenungleichheit",
+    "english": "inequality of opportunity"
+  },
+  {
+    "german": "Nachhilfe",
+    "english": "tutoring / extra lessons"
+  },
+  {
+    "german": "Schulpflicht",
+    "english": "compulsory schooling"
+  },
+  {
+    "german": "Disziplin",
+    "english": "discipline"
+  },
+  {
+    "german": "lernen",
+    "english": "to learn"
+  },
+  {
+    "german": "kompliziert",
+    "english": "complicated"
+  },
+  {
+    "german": "soziales Miteinander",
+    "english": "social interaction"
+  },
+  {
+    "german": "Kommunikation",
+    "english": "communication"
+  },
+  {
+    "german": "schreiben",
+    "english": "to write"
+  },
+  {
+    "german": "lesen",
+    "english": "to read"
+  },
+  {
+    "german": "Referat halten",
+    "english": "to give a presentation"
+  },
+  {
+    "german": "Sprachen",
+    "english": "languages"
+  },
+  {
+    "german": "rechnen",
+    "english": "to calculate"
+  },
+  {
+    "german": "Sport",
+    "english": "sports"
+  },
+  {
+    "german": "Musik",
+    "english": "music"
+  },
+  {
+    "german": "Musikinstrument",
+    "english": "musical instrument"
+  },
+  {
+    "german": "singen",
+    "english": "to sing"
+  },
+  {
+    "german": "(Schul)fach",
+    "english": "subject"
+  },
+  {
+    "german": "Schulfächer",
+    "english": "subjects"
+  },
+  {
+    "german": "Kunst",
+    "english": "art"
+  },
+  {
+    "german": "malen",
+    "english": "to paint"
+  },
+  {
+    "german": "zeichnen",
+    "english": "to draw"
+  },
+  {
+    "german": "Geschichte",
+    "english": "history"
+  },
+  {
+    "german": "Geografie",
+    "english": "geography"
+  },
+  {
+    "german": "Länder",
+    "english": "countries"
+  },
+  {
+    "german": "Kontinente",
+    "english": "continents"
+  },
+  {
+    "german": "Städte",
+    "english": "cities"
+  },
+  {
+    "german": "Klimazonen",
+    "english": "climate zones"
+  },
+  {
+    "german": "Meere",
+    "english": "seas"
+  },
+  {
+    "german": "Winde",
+    "english": "winds"
+  },
+  {
+    "german": "Vulkane",
+    "english": "volcanoes"
+  },
+  {
+    "german": "Fächer",
+    "english": "subjects / compartments"
+  },
+  {
+    "german": "Inhalte",
+    "english": "content"
+  },
+  {
+    "german": "Lieblingsfach",
+    "english": "favorite subject"
+  },
+  {
+    "german": "Gesicht",
+    "english": "face"
+  },
+  {
+    "german": "Nachmittagsunterricht",
+    "english": "afternoon classes"
+  },
+  {
+    "german": "Prüfung",
+    "english": "exam"
+  },
+  {
+    "german": "Klausur",
+    "english": "written exam / test"
+  },
+  {
+    "german": "Note",
+    "english": "grade"
+  },
+  {
+    "german": "Zeugnis",
+    "english": "report card / certificate"
+  },
+  {
+    "german": "Studium",
+    "english": "studies / university studies"
+  },
+  {
+    "german": "Universität",
+    "english": "university"
+  },
+  {
+    "german": "Physiotherapie",
+    "english": "physiotherapy"
+  },
+  {
+    "german": "Psychotherapeutin",
+    "english": "psychotherapist (female)"
+  },
+  {
+    "german": "Psychologie",
+    "english": "psychology"
+  },
+  {
+    "german": "Vorlesung",
+    "english": "lecture"
+  },
+  {
+    "german": "Seminar",
+    "english": "seminar / workshop"
+  },
+  {
+    "german": "theoretisch",
+    "english": "theoretical"
+  },
+  {
+    "german": "praktisch",
+    "english": "practical"
+  },
+  {
+    "german": "Semester",
+    "english": "semester"
+  },
+  {
+    "german": "Studiengebühren",
+    "english": "tuition fees"
+  },
+  {
+    "german": "Nebenjob",
+    "english": "side job"
+  },
+  {
+    "german": "Hiwi",
+    "english": "academic assistant"
+  },
+  {
+    "german": "Werkstudent",
+    "english": "working student"
+  },
+  {
+    "german": "Küchenhilfe",
+    "english": "kitchen help"
+  },
+  {
+    "german": "Lieferant",
+    "english": "delivery person"
+  },
+  {
+    "german": "typisch",
+    "english": "typical"
+  },
+  {
+    "german": "Kellner",
+    "english": "waiter / waitress"
+  },
+  {
+    "german": "Barkeeper",
+    "english": "bartender"
+  },
+  {
+    "german": "Kassierer",
+    "english": "cashier"
+  },
+  {
+    "german": "Verkäufer",
+    "english": "salesperson"
+  },
+  {
+    "german": "Babysitting",
+    "english": "babysitting"
+  },
+  {
+    "german": "Nachhilfelehrer",
+    "english": "tutor"
+  },
+  {
+    "german": "Prüfung bestehen",
+    "english": "to pass an exam"
+  },
+  {
+    "german": "Kita",
+    "english": "daycare center"
+  },
+  {
+    "german": "Kinderkrippe",
+    "english": "nursery"
+  },
+  {
+    "german": "Kindertagesstätte",
+    "english": "daycare center"
+  },
+  {
+    "german": "Tagesmutter",
+    "english": "day mother / childminder"
+  },
+  {
+    "german": "Krippenplatz",
+    "english": "nursery place"
+  },
+  {
+    "german": "Großeltern",
+    "english": "grandparents"
+  },
+  {
+    "german": "aufpassen",
+    "english": "to watch over / to take care"
+  },
+  {
+    "german": "großziehen",
+    "english": "to raise (children)"
+  },
+  {
+    "german": "Altenheim",
+    "english": "nursing home"
+  },
+  {
+    "german": "Seniorenheim",
+    "english": "senior citizens' home"
+  },
+  {
+    "german": "aufräumen",
+    "english": "to clean up"
+  },
+  {
+    "german": "einkaufen",
+    "english": "to shop"
+  },
+  {
+    "german": "vorlesen",
+    "english": "to read aloud"
+  },
+  {
+    "german": "ausgehen",
+    "english": "to go out"
+  },
+  {
+    "german": "verlieren",
+    "english": "to lose"
+  },
+  {
+    "german": "vergessen",
+    "english": "to forget"
+  },
+  {
+    "german": "verpassen",
+    "english": "to miss"
+  },
+  {
+    "german": "entschuldigen",
+    "english": "to apologize"
+  },
+  {
+    "german": "bestellen",
+    "english": "to order"
+  },
+  {
+    "german": "beginnen",
+    "english": "to begin"
+  },
+  {
+    "german": "Bildschirm",
+    "english": "screen"
+  },
+  {
+    "german": "Monitor",
+    "english": "monitor"
+  },
+  {
+    "german": "USB-Stick",
+    "english": "USB stick"
+  },
+  {
+    "german": "Satz",
+    "english": "sentence"
+  },
+  {
+    "german": "Kopiergerät",
+    "english": "photocopier"
+  },
+  {
+    "german": "Kopierer",
+    "english": "copier"
+  },
+  {
+    "german": "Drucker",
+    "english": "printer"
+  },
+  {
+    "german": "Tastatur",
+    "english": "keyboard"
+  },
+  {
+    "german": "Buch",
+    "english": "book"
+  },
+  {
+    "german": "Katalog",
+    "english": "catalog"
+  },
+  {
+    "german": "Briefkasten",
+    "english": "mailbox"
+  },
+  {
+    "german": "Produkte",
+    "english": "products"
+  },
+  {
+    "german": "zurücksenden",
+    "english": "to send back"
+  },
+  {
+    "german": "umtauschen",
+    "english": "to exchange"
+  },
+  {
+    "german": "reklamieren",
+    "english": "to complain / to claim"
+  },
+  {
+    "german": "zurückgeben",
+    "english": "to return"
+  },
+  {
+    "german": "Nordsee",
+    "english": "North Sea"
+  },
+  {
+    "german": "Ostsee",
+    "english": "Baltic Sea"
+  },
+  {
+    "german": "See",
+    "english": "sea / lake"
+  },
+  {
+    "german": "Städtetour",
+    "english": "city tour"
+  },
+  {
+    "german": "Städtereise",
+    "english": "city trip"
+  },
+  {
+    "german": "Sehenswürdigkeit",
+    "english": "sight / attraction"
+  },
+  {
+    "german": "besichtigen",
+    "english": "to visit / to view"
+  },
+  {
+    "german": "Stadtrundfahrt",
+    "english": "city tour"
+  },
+  {
+    "german": "Reiseführer",
+    "english": "travel guide"
+  },
+  {
+    "german": "Touristeninformation",
+    "english": "tourist information"
+  },
+  {
+    "german": "Norden",
+    "english": "north"
+  },
+  {
+    "german": "Osten",
+    "english": "east"
+  },
+  {
+    "german": "Süden",
+    "english": "south"
+  },
+  {
+    "german": "Westen",
+    "english": "west"
+  },
+  {
+    "german": "Himmelsrichtung",
+    "english": "cardinal direction"
+  },
+  {
+    "german": "Richtung",
+    "english": "direction"
+  },
+  {
+    "german": "Skiurlaub",
+    "english": "ski holiday"
+  },
+  {
+    "german": "Bauernhof",
+    "english": "farm"
+  },
+  {
+    "german": "Tiere füttern",
+    "english": "to feed animals"
+  },
+  {
+    "german": "Badesachen",
+    "english": "swim gear"
+  },
+  {
+    "german": "Souvenir",
+    "english": "souvenir"
+  },
+  {
+    "german": "Muscheln",
+    "english": "shells"
+  },
+  {
+    "german": "Eier",
+    "english": "eggs"
+  },
+  {
+    "german": "Käse",
+    "english": "cheese"
+  },
+  {
+    "german": "Steine",
+    "english": "stones"
+  },
+  {
+    "german": "Badeanzug",
+    "english": "swimsuit"
+  },
+  {
+    "german": "Bikini",
+    "english": "bikini"
+  },
+  {
+    "german": "Badehose",
+    "english": "swim trunks"
+  },
+  {
+    "german": "Sonnenbrille",
+    "english": "sunglasses"
+  },
+  {
+    "german": "Handtuch",
+    "english": "towel"
+  },
+  {
+    "german": "Sonnencreme",
+    "english": "sunscreen"
+  },
+  {
+    "german": "Sonnenhut",
+    "english": "sun hat"
+  },
+  {
+    "german": "Sonnenschirm",
+    "english": "sun umbrella"
+  },
+  {
+    "german": "Luftmatratze",
+    "english": "air mattress"
+  },
+  {
+    "german": "Liegestuhl",
+    "english": "lounge chair"
+  },
+  {
+    "german": "Sandburg",
+    "english": "sandcastle"
+  },
+  {
+    "german": "Ball",
+    "english": "ball"
+  },
+  {
+    "german": "Schaukel",
+    "english": "swing"
+  },
+  {
+    "german": "Rutsche",
+    "english": "slide"
+  },
+  {
+    "german": "fliegen",
+    "english": "to fly"
+  },
+  {
+    "german": "Flugzeug",
+    "english": "airplane"
+  },
+  {
+    "german": "Flughafen",
+    "english": "airport"
+  },
+  {
+    "german": "Passagier",
+    "english": "passenger"
+  },
+  {
+    "german": "Reisepass",
+    "english": "passport"
+  },
+  {
+    "german": "Ticket",
+    "english": "ticket"
+  },
+  {
+    "german": "buchen",
+    "english": "to book"
+  },
+  {
+    "german": "einchecken",
+    "english": "to check in"
+  },
+  {
+    "german": "Check-In-Schalter",
+    "english": "check-in counter"
+  },
+  {
+    "german": "Bordkarte",
+    "english": "board pass"
+  },
+  {
+    "german": "Sicherheitskontrolle",
+    "english": "security check"
+  },
+  {
+    "german": "Gate",
+    "english": "gate"
+  },
+  {
+    "german": "abfliegen",
+    "english": "to depart / to take off"
+  },
+  {
+    "german": "starten",
+    "english": "to start / to take off"
+  },
+  {
+    "german": "Abflug",
+    "english": "departure"
+  },
+  {
+    "german": "Ankunft",
+    "english": "arrival"
+  },
+  {
+    "german": "landen",
+    "english": "to land"
+  },
+  {
+    "german": "Landung",
+    "english": "landing"
+  },
+  {
+    "german": "Verspätung",
+    "english": "delay"
+  },
+  {
+    "german": "verspätet",
+    "english": "delayed"
+  },
+  {
+    "german": "Anzeigetafel",
+    "english": "display board"
+  },
+  {
+    "german": "Fluggesellschaft",
+    "english": "airline"
+  },
+  {
+    "german": "Gang",
+    "english": "aisle"
+  },
+  {
+    "german": "Höhenangst",
+    "english": "fear of heights"
+  },
+  {
+    "german": "Aussicht",
+    "english": "view"
+  },
+  {
+    "german": "Notausgang",
+    "english": "emergency exit"
+  },
+  {
+    "german": "Stewardess",
+    "english": "stewardess"
+  },
+  {
+    "german": "Flugbegleiter",
+    "english": "flight attendant"
+  },
+  {
+    "german": "Koffer",
+    "english": "suitcase"
+  },
+  {
+    "german": "Handgepäck",
+    "english": "hand luggage"
+  },
+  {
+    "german": "Gepäckstücke",
+    "english": "pieces of luggage"
+  },
+  {
+    "german": "Rezeption",
+    "english": "reception"
+  },
+  {
+    "german": "anmelden",
+    "english": "to register / to check in"
+  },
+  {
+    "german": "Reservierung",
+    "english": "reservation"
+  },
+  {
+    "german": "Ausweis",
+    "english": "ID / identification"
+  },
+  {
+    "german": "Formular ausfüllen",
+    "english": "to fill in a form"
+  },
+  {
+    "german": "Einzelzimmer",
+    "english": "single room"
+  },
+  {
+    "german": "Doppelzimmer",
+    "english": "double room"
+  },
+  {
+    "german": "Vollpension",
+    "english": "full board"
+  },
+  {
+    "german": "Halbpension",
+    "english": "half board"
+  },
+  {
+    "german": "Dorm",
+    "english": "dormitory"
+  },
+  {
+    "german": "Mehrbettzimmer",
+    "english": "multi-bed room"
+  },
+  {
+    "german": "pauschal",
+    "english": "flat rate"
+  },
+  {
+    "german": "Pauschalreise",
+    "english": "package tour"
+  },
+  {
+    "german": "Sportarten",
+    "english": "sports"
+  },
+  {
+    "german": "Rudern",
+    "english": "rowing"
+  },
+  {
+    "german": "Synchronschwimmen",
+    "english": "synchronized swimming"
+  },
+  {
+    "german": "unsportlich",
+    "english": "unsporty"
+  },
+  {
+    "german": "anstrengend",
+    "english": "exhausting / strenuous"
+  },
+  {
+    "german": "Schach",
+    "english": "chess"
+  },
+  {
+    "german": "gefährlich",
+    "english": "dangerous"
+  },
+  {
+    "german": "Tor",
+    "english": "goal"
+  },
+  {
+    "german": "Schlittschuh laufen",
+    "english": "to ice skate"
+  },
+  {
+    "german": "Ski fahren",
+    "english": "to ski"
+  },
+  {
+    "german": "Eishockey",
+    "english": "ice hockey"
+  },
+  {
+    "german": "Langlaufen",
+    "english": "cross-country skiing"
+  },
+  {
+    "german": "Mannschaften",
+    "english": "teams"
+  },
+  {
+    "german": "Schläger",
+    "english": "racket / bat"
+  },
+  {
+    "german": "Tennisschläger",
+    "english": "tennis racket"
+  },
+  {
+    "german": "Netz",
+    "english": "net"
+  },
+  {
+    "german": "Skipiste",
+    "english": "ski slope"
+  },
+  {
+    "german": "abseits",
+    "english": "far away / offside"
+  },
+  {
+    "german": "Fahrradweg",
+    "english": "bike path"
+  },
+  {
+    "german": "Leichtathletik",
+    "english": "athletics"
+  },
+  {
+    "german": "Weitsprung",
+    "english": "long jump"
+  },
+  {
+    "german": "Hochsprung",
+    "english": "high jump"
+  },
+  {
+    "german": "springen",
+    "english": "to jump"
+  },
+  {
+    "german": "laufen",
+    "english": "to run"
+  },
+  {
+    "german": "werfen",
+    "english": "to throw"
+  },
+  {
+    "german": "Speerwurf",
+    "english": "javelin throw"
+  },
+  {
+    "german": "gewinnen",
+    "english": "to win"
+  },
+  {
+    "german": "ersten Platz",
+    "english": "first place"
+  },
+  {
+    "german": "verloren",
+    "english": "lost"
+  },
+  {
+    "german": "besiegen",
+    "english": "to defeat"
+  },
+  {
+    "german": "trainieren",
+    "english": "to train"
+  },
+  {
+    "german": "Training",
+    "english": "training"
+  },
+  {
+    "german": "Verein",
+    "english": "club / association"
+  },
+  {
+    "german": "Mitglied",
+    "english": "member"
+  },
+  {
+    "german": "Magen-Darm-Virus",
+    "english": "gastrointestinal virus"
+  },
+  {
+    "german": "verletzt",
+    "english": "injured"
+  },
+  {
+    "german": "Verletzung",
+    "english": "injury"
+  }
+]
