@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Flash Cards - Deutsches Lernhaus</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Deutsches Lernhaus</h1>
+
+  <div id="container">
+    <h2>Flash Card Game</h2>
+
+    <!-- Config Info -->
+    <div id="gameConfig" style="margin-bottom:1rem; color:#ccc;">
+      <p>Number of Questions: <span id="infoLimit">5</span></p>
+      <p>Direction: <span id="infoDirection">DE->EN</span></p>
+    </div>
+
+    <div id="gameArea" style="display:none;">
+      
+      <!-- Centered question counter -->
+      <p 
+        id="questionCounter" 
+        style="
+          text-align:center; 
+          font-weight:bold; 
+          font-size:1.2rem; 
+          margin-top:0.5rem;
+        "
+      >
+        Question <span id="currentQuestionIndex">1</span> / 
+        <span id="totalQuestions">5</span>
+      </p>
+
+      <!-- We'll insert the highlighted word in .innerHTML -->
+      <p 
+        id="questionText" 
+        style="margin-top:1rem;"
+      ></p>
+
+      <div 
+        id="flashCardBox" 
+        style="background:#333; border:1px solid #ff4f5e; border-radius:4px; padding:1rem; margin-top:1rem;"
+      >
+        <button id="flipBtn" style="display:inline-block;">Show Answer</button>
+        <p id="flashAnswer" style="margin-top:0.5rem;"></p>
+
+        <p 
+          id="correctnessLabel" 
+          style="display:none; margin-top:0.5rem; font-weight:bold;"
+        >
+          Did you answer correct or wrong?
+        </p>
+        <!-- Green correct, red wrong -->
+        <button 
+          id="correctBtn" 
+          style="display:none; background-color:green; margin-right:0.5rem;"
+        >
+          Correct
+        </button>
+        <button 
+          id="wrongBtn" 
+          style="display:none; background-color:red;"
+        >
+          Wrong
+        </button>
+      </div>
+
+      <button id="nextBtn" style="display:none; margin-top:1rem;">
+        Next
+      </button>
+      <button class="exitBtn" onclick="openExitModal()" style="margin-top:1rem;">
+        Exit Game
+      </button>
+    </div>
+
+    <div id="result" style="display:none;">
+      <h2>Game Over!</h2>
+      <p id="summaryText"></p>
+      <p id="scoreText"></p>
+
+      <div id="reviewSection">
+        <h3>Review Your Answers</h3>
+        <table id="reviewTable">
+          <thead>
+            <tr>
+              <th>Word</th>
+              <th>Your Answer</th>
+              <th>Correct Answer</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody id="reviewTableBody"></tbody>
+        </table>
+      </div>
+
+      <!-- two buttons -->
+      <div style="margin-top:1rem;">
+        <button onclick="resetGame()">Play Again</button>
+        <button 
+          onclick="location.href='index.html'"
+          style="margin-left:1rem;"
+        >
+          Main Menu
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Exit Modal -->
+  <div id="exitModal">
+    <div id="exitModalContent">
+      <h3>Exit Game?</h3>
+      <p id="exitModalText"></p>
+      <div id="exitModalButtons">
+        <button id="exitYesBtn">Yes</button>
+        <button id="exitNoBtn">No</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let vocab = [];
+    let questionLimit = 5;
+    let direction = "DE->EN";
+
+    let currentIndex = 0;
+    let correctAnswers = 0;
+    let wordsPlayed = [];
+
+    let currentWordObj = null;
+    let hasFlipped = false;
+
+    // references
+    let exitModal, exitYesBtn, exitNoBtn;
+
+    window.addEventListener("DOMContentLoaded", () => {
+      // load vocab
+      fetch("vocab.json")
+        .then(r => r.json())
+        .then(data => { vocab = data; })
+        .catch(err => console.error(err));
+
+      // parse query
+      const params = new URLSearchParams(window.location.search);
+      questionLimit = parseInt(params.get("limit")) || 5;
+      direction = params.get("dir") || "DE->EN";
+
+      document.getElementById("infoLimit").textContent = questionLimit;
+      document.getElementById("infoDirection").textContent = direction;
+      document.getElementById("totalQuestions").textContent = questionLimit;
+
+      // exit modal
+      exitModal = document.getElementById("exitModal");
+      exitYesBtn = document.getElementById("exitYesBtn");
+      exitNoBtn = document.getElementById("exitNoBtn");
+      exitYesBtn.onclick = confirmExitGame;
+      exitNoBtn.onclick = closeExitModal;
+
+      // auto-start
+      setTimeout(() => startGame(), 500);
+    });
+
+    function startGame() {
+      currentIndex = 0;
+      correctAnswers = 0;
+      wordsPlayed = [];
+
+      document.getElementById("gameArea").style.display = "block";
+      document.getElementById("result").style.display = "none";
+      loadNextCard();
+    }
+
+    function loadNextCard() {
+      if (currentIndex >= questionLimit) {
+        endGame();
+        return;
+      }
+      currentIndex++;
+      document.getElementById("currentQuestionIndex").textContent = currentIndex;
+
+      hasFlipped = false;
+
+      const flipBtn = document.getElementById("flipBtn");
+      const flashAnswer = document.getElementById("flashAnswer");
+      const correctnessLabel = document.getElementById("correctnessLabel");
+      const correctBtn = document.getElementById("correctBtn");
+      const wrongBtn = document.getElementById("wrongBtn");
+      const nextBtn = document.getElementById("nextBtn");
+
+      // reset
+      flipBtn.style.display = "inline-block";
+      flashAnswer.textContent = "";
+      correctnessLabel.style.display = "none";
+      correctBtn.style.display = "none";
+      wrongBtn.style.display = "none";
+      nextBtn.style.display = "none";
+
+      currentWordObj = vocab[Math.floor(Math.random() * vocab.length)];
+      const questionTextEl = document.getElementById("questionText");
+
+      // highlight the main word
+      if (direction === "DE->EN") {
+        questionTextEl.innerHTML = `
+          Word: 
+          <span style="color:#ff4f5e; font-size:1.2rem; font-weight:bold;">
+            ${currentWordObj.german}
+          </span>
+        `;
+      } else {
+        questionTextEl.innerHTML = `
+          Word: 
+          <span style="color:#ff4f5e; font-size:1.2rem; font-weight:bold;">
+            ${currentWordObj.english}
+          </span>
+        `;
+      }
+
+      flipBtn.onclick = showAnswer;
+      correctBtn.onclick = () => markAnswer(true);
+      wrongBtn.onclick = () => markAnswer(false);
+    }
+
+    function showAnswer() {
+      if (hasFlipped) return;
+      hasFlipped = true;
+
+      const flipBtn = document.getElementById("flipBtn");
+      const correctnessLabel = document.getElementById("correctnessLabel");
+      const correctBtn = document.getElementById("correctBtn");
+      const wrongBtn = document.getElementById("wrongBtn");
+      const flashAnswer = document.getElementById("flashAnswer");
+
+      flipBtn.style.display = "none";
+      correctnessLabel.style.display = "block";
+      correctBtn.style.display = "inline-block";
+      wrongBtn.style.display = "inline-block";
+
+      let answer = "";
+      if (direction === "DE->EN") {
+        answer = currentWordObj.english.trim();
+      } else {
+        answer = currentWordObj.german.trim();
+      }
+      flashAnswer.textContent = `Answer: ${answer}`;
+    }
+
+    function markAnswer(userCorrect) {
+      const correctBtn = document.getElementById("correctBtn");
+      const wrongBtn = document.getElementById("wrongBtn");
+      correctBtn.style.display = "none";
+      wrongBtn.style.display = "none";
+
+      if (userCorrect) correctAnswers++;
+
+      let qWord, cWord;
+      if (direction === "DE->EN") {
+        qWord = currentWordObj.german;
+        cWord = currentWordObj.english.trim();
+      } else {
+        qWord = currentWordObj.english;
+        cWord = currentWordObj.german.trim();
+      }
+
+      wordsPlayed.push({
+        questionWord: qWord,
+        userAnswer: userCorrect ? "(flash card correct)" : "(flash card wrong)",
+        correctAnswer: cWord,
+        isCorrect: userCorrect
+      });
+
+      const nextBtn = document.getElementById("nextBtn");
+      nextBtn.style.display = "inline-block";
+      nextBtn.onclick = () => loadNextCard();
+    }
+
+    function endGame() {
+      document.getElementById("gameArea").style.display = "none";
+      document.getElementById("result").style.display = "block";
+
+      const answeredCount = wordsPlayed.length;
+      const skipped = questionLimit - answeredCount;
+
+      const summary = `You answered ${answeredCount} out of ${questionLimit} questions. (${skipped} skipped)`;
+      document.getElementById("summaryText").textContent = summary;
+
+      // final score
+      const scorePercent = Math.round((correctAnswers / questionLimit) * 100);
+      document.getElementById("scoreText").textContent =
+        `Score: ${correctAnswers} correct out of ${questionLimit} (${scorePercent}%).`;
+
+      fillReviewTable();
+    }
+
+    function fillReviewTable() {
+      const tbody = document.getElementById("reviewTableBody");
+      tbody.innerHTML = "";
+
+      wordsPlayed.forEach(item => {
+        const tr = document.createElement("tr");
+
+        const tdQ = document.createElement("td");
+        tdQ.textContent = item.questionWord;
+        tr.appendChild(tdQ);
+
+        const tdA = document.createElement("td");
+        tdA.textContent = item.userAnswer;
+        tr.appendChild(tdA);
+
+        const tdC = document.createElement("td");
+        tdC.textContent = item.correctAnswer;
+        tr.appendChild(tdC);
+
+        const tdS = document.createElement("td");
+        tdS.textContent = item.isCorrect ? "Correct" : "Wrong";
+        tdS.style.color = item.isCorrect ? "limegreen" : "crimson";
+        tr.appendChild(tdS);
+
+        tbody.appendChild(tr);
+      });
+    }
+
+    function resetGame() {
+      currentIndex = 0;
+      correctAnswers = 0;
+      wordsPlayed = [];
+      document.getElementById("result").style.display = "none";
+      document.getElementById("gameArea").style.display = "block";
+      loadNextCard();
+    }
+
+    // exit mid-game => endGame immediately
+    function openExitModal() {
+      const remain = questionLimit - currentIndex;
+      const txt = document.getElementById("exitModalText");
+      if (remain > 0) {
+        txt.textContent = `Are you sure you want to exit? You've answered ${wordsPlayed.length}, 
+          and ${remain} remain.`;
+      } else {
+        txt.textContent = "Are you sure you want to exit now?";
+      }
+      exitModal.style.display = "flex";
+    }
+    function closeExitModal() {
+      exitModal.style.display = "none";
+    }
+    function confirmExitGame() {
+      endGame();
+      closeExitModal();
+    }
+  </script>
+</body>
+</html>

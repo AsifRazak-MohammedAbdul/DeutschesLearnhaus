@@ -1,172 +1,259 @@
 /* ========== Global Resets and Body ========== */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  /* A gradient background */
+  background: linear-gradient(to right, #2c3e50, #4ca1af) fixed;
+  color: #e0e0e0;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+/* Main containers */
+#homeContainer, #container, #containerWords {
+  max-width: 700px;
+  margin: 0 auto;
+  background: rgba(31,31,31,0.9);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.5);
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #f5f5f5;
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+h2 {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #ccc;
+}
+
+/* Buttons */
+button {
+  margin: 0.5rem 0;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: #424242;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #ff4f5e;
+}
+
+.longBtn {
+  width: 100%;
+}
+
+/* Input fields */
+select, input[type="number"], input[type="text"] {
+  width: 100%;
+  padding: 0.4rem;
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  color: #e0e0e0;
+  background: #2b2b2b;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+select:focus, input:focus {
+  outline: none;
+  border-color: #666;
+}
+
+/* The help button in bottom-right corner */
+#helpButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  background-color: #f39c12;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 9999;
+}
+#helpButton:hover {
+  background-color: #f1c40f;
+}
+
+/* Help Modal */
+#helpModal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+}
+#helpModalContent {
+  background: #1f1f1f;
+  border: 1px solid #ff4f5e;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+#helpModalContent h3 {
+  color: #ff4f5e;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+/* exitBtn style */
+.exitBtn {
+  background-color: #f39c12;
+  margin-left: 0.5rem;
+}
+.exitBtn:hover {
+  background-color: #f1c40f;
+}
+
+/* The final review table */
+#reviewSection {
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+#reviewTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+}
+#reviewTable th, #reviewTable td {
+  border: 1px solid #555;
+  padding: 0.5rem;
+  text-align: left;
+  color: #ccc;
+}
+#reviewTable thead {
+  background-color: #424242;
+}
+
+/* Exit game modal */
+#exitModal {
+  position: fixed; 
+  top: 0; left: 0; 
+  width: 100%;
+  height: 100%;
+  display: none; 
+  justify-content: center; 
+  align-items: center;
+  background: rgba(0,0,0,0.7);
+  z-index: 9999;
+}
+#exitModalContent {
+  background: #1f1f1f;
+  border: 1px solid #ff4f5e;
+  border-radius: 8px;
+  padding: 2rem;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+}
+#exitModalContent h3 {
+  color: #ff4f5e;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+#exitModalButtons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+#exitYesBtn, #exitNoBtn {
+  background-color: #424242;
+  padding: 0.7rem 1.5rem;
+}
+#exitYesBtn:hover {
+  background-color: #e74c3c;
+}
+#exitNoBtn:hover {
+  background-color: #3498db;
+}
+
+/* =============
+   WORDS TABLE 
+   ============= */
+table.wordsTable {
+  border: 2px solid #ff4f5e;
+  border-radius: 4px;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.5rem;
+}
+table.wordsTable thead {
+  background: #424242;
+  color: #fff;
+}
+table.wordsTable th, table.wordsTable td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #555;
+  word-wrap: break-word;
+  color: #ddd; 
+}
+table.wordsTable tbody {
+  display: block;
+  max-height: 300px;
+  overflow-y: auto;
+}
+table.wordsTable thead, table.wordsTable tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+/* custom scrollbar for table */
+table.wordsTable tbody::-webkit-scrollbar {
+  width: 8px;
+}
+table.wordsTable tbody::-webkit-scrollbar-track {
+  background: #2a2a2a;
+}
+table.wordsTable tbody::-webkit-scrollbar-thumb {
+  background: #ff4f5e;
+  border-radius: 4px;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  #homeContainer, #container, #containerWords {
+    margin: 0 1rem;
   }
-  
-  body {
-    font-family: "Segoe UI", Tahoma, sans-serif;
-    background: #121212; /* Dark background */
-    color: #e0e0e0;      /* Lighter text for contrast */
-    padding: 1rem;
-  }
-  
-  /* Container for main content sections */
-  #container, #containerWords {
-    max-width: 700px;
-    margin: 0 auto;
-    background: #1f1f1f; /* Slightly lighter dark background */
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.5);
-  }
-  
-  /* Headings */
-  h1, h2 {
-    text-align: center;
-    color: #f5f5f5;
-    margin-bottom: 1rem;
-  }
-  h1 {
-    font-size: 1.8rem;
-  }
-  h2 {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-  }
-  
-  /* Labels and text */
-  label {
-    font-weight: bold;
-    margin-right: 0.5rem;
-    color: #ccc;
-  }
-  
-  /* Buttons */
-  button {
-    margin: 0.5rem 0;
-    padding: 0.6rem 1rem;
-    border: none;
-    border-radius: 4px;
-    background-color: #424242;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  button:hover {
-    background-color: #616161;
-  }
-  
-  /* Inputs */
-  select, input[type="number"], input[type="text"] {
+  button, select, input {
     width: 100%;
-    padding: 0.4rem;
-    margin: 0.5rem 0;
-    font-size: 1rem;
-    color: #e0e0e0;
-    background: #2b2b2b;
-    border: 1px solid #444;
-    border-radius: 4px;
   }
-  select:focus, input[type="number"]:focus, input[type="text"]:focus {
-    outline: none;
-    border-color: #666;
-  }
-  
-  /* Game/Result areas */
-  #game, #result {
-    margin-top: 1rem;
-    background: #2a2a2a;
-    border: 1px solid #444;
-    border-radius: 8px;
-    padding: 1rem;
-    display: none;
-  }
-  #options button {
-    margin: 0.25rem 0;
-    display: block;
-    width: 100%;
-    font-size: 0.95rem;
-  }
-  #feedback {
-    margin-top: 1rem;
-    font-weight: bold;
-    min-height: 1.5rem;
-  }
-  
-  /* Table styling for words.html */
   table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 0.5rem;
-  }
-  thead {
-    background: #424242;
-    color: #fff;
+    font-size: 0.9rem;
   }
   th, td {
-    padding: 0.75rem;
-    text-align: left;
-    border-bottom: 1px solid #555;
-    word-wrap: break-word;
+    padding: 0.5rem;
   }
-  tbody {
-    display: block;
-    max-height: 300px; 
-    overflow-y: auto;
-  }
-  thead, tbody tr {
-    display: table;
-    width: 100%;
-    table-layout: fixed;
-  }
-  
-  /* Alphabet filter buttons (words.html) */
-  #alphabetFilter {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.25rem;
-    margin-top: 0.5rem;
-  }
-  #alphabetFilter button {
-    padding: 0.3rem 0.6rem;
-    font-size: 0.9rem;
-    background: #424242;
-    color: #fff;
-    border: none;
-  }
-  #alphabetFilter button:hover {
-    background: #616161;
-  }
-  .highlight {
-    background: #2ecc71 !important;
-  }
-  
-  /* For smaller screens */
-  @media (max-width: 600px) {
-    #container, #containerWords {
-      margin: 0 1rem;
-    }
-    button, select, input {
-      width: 100%;
-    }
-    #options button {
-      font-size: 1rem;
-    }
-    table {
-      font-size: 0.9rem;
-    }
-    th, td {
-      padding: 0.5rem;
-    }
-    #controls {
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-    #alphabetFilter {
-      justify-content: center;
-    }
-  }
-  
+}

@@ -2,245 +2,112 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Deutsches Lernhaus - Multiple Choice Game</title>
-  <!-- Mobile friendly -->
+  <title>Deutsches Lernhaus</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Link to external CSS -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <h1>Welcome to Deutsches Lernhaus</h1>
-  <div id="container">
-    <h2>Multiple Choice Quiz</h2>
+  <!-- Main Heading -->
+  <h1>Deutsches Lernhaus</h1>
 
-    <!-- Configuration Section -->
-    <div id="config">
-      <div>
-        <label for="questionCount">Number of Questions:</label>
-        <input type="number" id="questionCount" min="1" max="999" value="5" />
+  <div id="homeContainer">
+    <h2>Choose Your Game Options</h2>
+
+    <!-- Game Configuration -->
+    <label for="questionCount">Number of Questions:</label>
+    <input type="number" id="questionCount" min="1" max="999" value="5" />
+
+    <label for="directionChoice">Direction:</label>
+    <select id="directionChoice">
+      <option value="DE->EN">German → English</option>
+      <option value="EN->DE">English → German</option>
+    </select>
+
+    <label for="gameType">Game Type:</label>
+    <select id="gameType">
+      <option value="multiple" selected>Multiple Choice</option>
+      <option value="flashcard">Flash Cards</option>
+    </select>
+
+    <!-- Start Button -->
+    <button id="startBtn" class="longBtn" style="margin-top:1rem;">Start Game</button>
+
+    <!-- Display Words Button -->
+    <button 
+      class="longBtn" 
+      onclick="location.href='words.html'"
+      style="margin-top:1rem;"
+    >
+      Display All Words
+    </button>
+  </div>
+
+  <!-- Help Button -->
+  <button id="helpButton" onclick="openHelpModal()">?</button>
+
+  <!-- Help Modal -->
+  <div id="helpModal">
+    <div id="helpModalContent">
+      <h3>How to Play</h3>
+      <!-- Subheadings + bullet points -->
+      <h4>Multiple Choice</h4>
+      <ul style="text-align:left; margin-bottom:1rem;">
+        <li>Select the number of questions and your language direction.</li>
+        <li>Click “Start Game,” then pick the correct option for each question.</li>
+        <li>Exit any time or finish all questions to see your results.</li>
+      </ul>
+
+      <h4>Flash Cards</h4>
+      <ul style="text-align:left; margin-bottom:1rem;">
+        <li>Choose how many flash cards and your language direction.</li>
+        <li>Click “Show Answer,” then mark yourself correct or wrong.</li>
+        <li>Exit or finish to see your final score and review table.</li>
+      </ul>
+
+      <h4>Vocabulary</h4>
+      <ul style="text-align:left; margin-bottom:1rem;">
+        <li>Use “Display All Words” to see the entire vocabulary list.</li>
+        <li>Filter by letter (German) or search in German or English.</li>
+      </ul>
+
+      <h4>Exiting a Game</h4>
+      <ul style="text-align:left;">
+        <li>Click “Exit Game” to confirm leaving mid-session.</li>
+        <li>Unanswered questions are marked as wrong.</li>
+      </ul>
+
+      <div id="helpModalButtons" style="margin-top:1rem;">
+        <button onclick="closeHelpModal()">Close</button>
       </div>
-
-      <!-- Direction dropdown -->
-      <div>
-        <label for="directionChoice">Direction:</label>
-        <select id="directionChoice">
-          <option value="DE->EN" selected>German → English</option>
-          <option value="EN->DE">English → German</option>
-        </select>
-      </div>
-
-      <button onclick="startGame()">Start Game</button>
-      <!-- Button to display all words (goes to words.html) -->
-      <button onclick="window.location.href='words.html'">Display All Words</button>
-    </div>
-
-    <!-- Game Section -->
-    <div id="game">
-      <h2>Question <span id="currentQuestionIndex">1</span> / <span id="totalQuestions">5</span></h2>
-      <p id="questionText">Loading...</p>
-      <div id="options"></div>
-      <div id="feedback"></div>
-      <button id="nextBtn" onclick="nextQuestion()" style="display: none;">
-        Next Question
-      </button>
-    </div>
-
-    <!-- Result Section -->
-    <div id="result">
-      <h2>Game Over!</h2>
-      <p id="scoreText"></p>
-      <button onclick="resetGame()">Play Again</button>
     </div>
   </div>
 
   <script>
-    /*****************************************
-     * Global Variables
-     *****************************************/
-    let vocab = [];            // Will store data from vocab.json
-    let questionLimit = 5;     // User-chosen number of questions
-    let currentIndex = 0;      // Which question are we on?
-    let correctAnswers = 0;    // Count correct answers
-    let direction = "DE->EN";  // "DE->EN" or "EN->DE"
+    document.getElementById("startBtn").addEventListener("click", () => {
+      const limit = document.getElementById("questionCount").value.trim();
+      const direction = document.getElementById("directionChoice").value.trim();
+      const gameType = document.getElementById("gameType").value;
 
-    /*****************************************
-     * Fetch vocab.json on page load
-     *****************************************/
-    window.addEventListener('DOMContentLoaded', () => {
-      fetch("vocab.json")
-        .then(resp => resp.json())
-        .then(data => {
-          vocab = data;
-          console.log("Loaded vocab:", vocab);
-        })
-        .catch(err => {
-          alert("Error loading vocab.json. Check console for details.");
-          console.error(err);
-        });
-    });
-
-    /*****************************************
-     * Start Game
-     *****************************************/
-    function startGame() {
-      // Read how many questions user wants
-      const userInput = document.getElementById('questionCount').value;
-      questionLimit = parseInt(userInput) || 5; 
-      currentIndex = 0;
-      correctAnswers = 0;
-
-      // Get direction choice
-      direction = document.getElementById('directionChoice').value;
-
-      // Hide config, show game
-      document.getElementById('config').style.display = 'none';
-      document.getElementById('game').style.display = 'block';
-      document.getElementById('result').style.display = 'none';
-
-      // Update the totalQuestions text
-      document.getElementById('totalQuestions').textContent = questionLimit;
-
-      // Load first question
-      nextQuestion();
-    }
-
-    /*****************************************
-     * Generate Next Question
-     *****************************************/
-    function nextQuestion() {
-      // If we've asked enough questions, end the game
-      if (currentIndex >= questionLimit) {
-        endGame();
+      if (!limit || parseInt(limit) < 1) {
+        alert("Please enter a valid number of questions.");
         return;
       }
 
-      // Clear old feedback
-      const feedbackEl = document.getElementById('feedback');
-      feedbackEl.textContent = "";
-      feedbackEl.style.color = "inherit";
-
-      // Hide the "Next" button until user selects an answer
-      document.getElementById('nextBtn').style.display = "none";
-
-      // Update question counter
-      currentIndex++;
-      document.getElementById('currentQuestionIndex').textContent = currentIndex;
-
-      // Get a random vocab entry
-      const randomWord = vocab[Math.floor(Math.random() * vocab.length)];
-
-      // Prepare question text depending on direction
-      let correctAnswer = "";
-      let questionPrompt = "";
-
-      if (direction === "DE->EN") {
-        questionPrompt = `Translate "${randomWord.german}" to English:`;
-        correctAnswer = randomWord.english.trim();
+      if (gameType === "multiple") {
+        window.location.href = `multiplechoice.html?limit=${limit}&dir=${encodeURIComponent(direction)}`;
       } else {
-        questionPrompt = `Translate "${randomWord.english}" to German:`;
-        correctAnswer = randomWord.german.trim();
+        window.location.href = `flashcard.html?limit=${limit}&dir=${encodeURIComponent(direction)}`;
       }
+    });
 
-      // Update question text in DOM
-      document.getElementById('questionText').textContent = questionPrompt;
-
-      // Build multiple choice options
-      const distractors = getDistractors(correctAnswer, 3); 
-      const allOptions = [correctAnswer, ...distractors];
-      shuffleArray(allOptions);
-
-      // Render the buttons
-      const optionsDiv = document.getElementById('options');
-      optionsDiv.innerHTML = ""; // clear existing
-      allOptions.forEach(optionText => {
-        const btn = document.createElement('button');
-        btn.textContent = optionText;
-        btn.onclick = () => checkAnswer(optionText, correctAnswer);
-        optionsDiv.appendChild(btn);
-      });
+    // Help Modal
+    const helpModal = document.getElementById("helpModal");
+    function openHelpModal() {
+      helpModal.style.display = "flex";
     }
-
-    /*****************************************
-     * Check Answer
-     *****************************************/
-    function checkAnswer(selected, correct) {
-      const feedbackEl = document.getElementById('feedback');
-
-      if (selected.toLowerCase() === correct.toLowerCase()) {
-        correctAnswers++;
-        feedbackEl.textContent = "Correct!";
-        feedbackEl.style.color = "limegreen";
-      } else {
-        feedbackEl.textContent = `Wrong! Correct answer: ${correct}`;
-        feedbackEl.style.color = "crimson";
-      }
-
-      // Disable all option buttons
-      const buttons = document.querySelectorAll('#options button');
-      buttons.forEach(b => b.disabled = true);
-
-      // Show "Next Question" (or end if last question)
-      if (currentIndex >= questionLimit) {
-        document.getElementById('nextBtn').textContent = "Show Result";
-      } else {
-        document.getElementById('nextBtn').textContent = "Next Question";
-      }
-      document.getElementById('nextBtn').style.display = "inline-block";
-    }
-
-    /*****************************************
-     * End Game
-     *****************************************/
-    function endGame() {
-      // Hide the game, show result
-      document.getElementById('game').style.display = 'none';
-      document.getElementById('result').style.display = 'block';
-
-      // Calculate and show score
-      const scorePercent = Math.round((correctAnswers / questionLimit) * 100);
-      const scoreText = `You got ${correctAnswers} out of ${questionLimit} correct (${scorePercent}%).`;
-      document.getElementById('scoreText').textContent = scoreText;
-    }
-
-    /*****************************************
-     * Reset Game
-     *****************************************/
-    function resetGame() {
-      // Show config again
-      document.getElementById('config').style.display = 'block';
-      document.getElementById('game').style.display = 'none';
-      document.getElementById('result').style.display = 'none';
-    }
-
-    /*****************************************
-     * Helper: Get Distractors
-     *****************************************/
-    function getDistractors(correct, count) {
-      // Filter the relevant field (English or German) from the vocab
-      let pool;
-      if (direction === "DE->EN") {
-        pool = vocab.map(w => w.english.trim());
-      } else {
-        pool = vocab.map(w => w.german.trim());
-      }
-
-      // Exclude correct answer
-      pool = pool.filter(word => word.toLowerCase() !== correct.toLowerCase());
-
-      // Shuffle and pick the top 'count'
-      shuffleArray(pool);
-      return pool.slice(0, count);
-    }
-
-    /*****************************************
-     * Helper: Shuffle Array
-     *****************************************/
-    function shuffleArray(array) {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
+    function closeHelpModal() {
+      helpModal.style.display = "none";
     }
   </script>
 </body>

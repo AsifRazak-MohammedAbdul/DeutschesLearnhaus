@@ -3,20 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <title>All Words - Deutsches Lernhaus</title>
-  <!-- Mobile friendly -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Link to external CSS -->
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
 
   <h1>All Words - Deutsches Lernhaus</h1>
   <div id="containerWords">
 
-    <div id="controls" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; align-items: center;">
-      <!-- Back Button -->
-      <button onclick="window.location.href='index.html'">Back to Game</button>
-      <!-- Search Bar -->
+    <div id="controls" style="display:flex; flex-wrap:wrap; gap:0.5rem; margin-bottom:1rem; align-items:center;">
+      <button onclick="location.href='index.html'">Back to Home</button>
       <input 
         type="text" 
         id="searchBox" 
@@ -25,93 +21,62 @@
       />
     </div>
 
-    <!-- Alphabet Filter -->
-    <div id="alphabetFilter"></div>
+    <div id="alphabetFilter">
+      <label for="letterSelect">Filter by Letter (German):</label>
+      <select id="letterSelect" onchange="filterWords()">
+        <option value="">All</option>
+      </select>
+    </div>
 
-    <!-- Table for words -->
-    <table>
+    <table class="wordsTable">
       <thead>
         <tr>
           <th>German</th>
           <th>English</th>
         </tr>
       </thead>
-      <tbody id="wordTableBody">
-        <!-- Filled by JavaScript -->
-      </tbody>
+      <tbody id="wordTableBody"></tbody>
     </table>
   </div>
 
   <script>
     let vocab = [];
-    // Current filters
-    let selectedLetter = ""; // e.g. "A", "B", ...
+    let selectedLetter = "";
     let searchQuery = "";
 
-    // Load vocab.json when the page loads
     window.addEventListener('DOMContentLoaded', () => {
       fetch("vocab.json")
         .then(resp => resp.json())
         .then(data => {
           vocab = data;
           console.log("Loaded vocab:", vocab);
-          buildAlphabetButtons();
-          displayWords(); // initial display
+          buildLetterDropdown();
+          displayWords();
         })
         .catch(err => {
-          alert("Error loading vocab.json. Check console for details.");
+          alert("Error loading vocab.json");
           console.error(err);
         });
     });
 
-    /*********************************************
-     * Build A-Z filter buttons (German only)
-     *********************************************/
-    function buildAlphabetButtons() {
+    function buildLetterDropdown() {
       const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
-      const container = document.getElementById("alphabetFilter");
-      container.innerHTML = "";
+      const letterSelect = document.getElementById("letterSelect");
 
-      // Add an "All" button to reset letter filter
-      const allBtn = document.createElement("button");
-      allBtn.textContent = "All";
-      allBtn.classList.add("highlight"); // highlight "All" by default
-      allBtn.onclick = () => {
-        selectedLetter = "";
-        highlightSelectedLetter("");
-        filterWords();
-      };
-      container.appendChild(allBtn);
-
-      // Build A-Z
       alphabet.forEach(letter => {
-        const btn = document.createElement("button");
-        btn.textContent = letter;
-        btn.onclick = () => {
-          selectedLetter = letter;
-          highlightSelectedLetter(letter);
-          filterWords();
-        };
-        container.appendChild(btn);
+        const opt = document.createElement("option");
+        opt.value = letter;
+        opt.textContent = letter;
+        letterSelect.appendChild(opt);
       });
     }
 
-    /*********************************************
-     * Highlight selected letter button
-     *********************************************/
-    function highlightSelectedLetter(letter) {
-      const buttons = document.querySelectorAll("#alphabetFilter button");
-      buttons.forEach(b => {
-        b.classList.remove("highlight");
-        if (b.textContent === letter || (letter === "" && b.textContent === "All")) {
-          b.classList.add("highlight");
-        }
-      });
+    function filterWords() {
+      selectedLetter = document.getElementById("letterSelect").value;
+      searchQuery = document.getElementById("searchBox").value.trim();
+      displayWords();
     }
 
-    /*********************************************
-     * Display the words (with filters)
-     *********************************************/
     function displayWords() {
       const tableBody = document.getElementById("wordTableBody");
       tableBody.innerHTML = "";
@@ -121,22 +86,18 @@
         return;
       }
 
-      // Filter the array
-      const filtered = vocab.filter(wordObj => {
-        // 1) Alphabet filter on German only
+      const filtered = vocab.filter(w => {
+        // letter filter on German
         if (selectedLetter) {
-          // must start with letter in GERMAN
-          const startsGerman = wordObj.german.trim().toUpperCase().startsWith(selectedLetter);
-          if (!startsGerman) {
+          if (!w.german.toUpperCase().startsWith(selectedLetter)) {
             return false;
           }
         }
-        // 2) Search query in either German or English
+        // search in German or English
         if (searchQuery) {
-          const g = wordObj.german.toLowerCase();
-          const e = wordObj.english.toLowerCase();
+          const g = w.german.toLowerCase();
+          const e = w.english.toLowerCase();
           const s = searchQuery.toLowerCase();
-          // must contain search string in either column
           if (!g.includes(s) && !e.includes(s)) {
             return false;
           }
@@ -150,27 +111,17 @@
       }
 
       filtered.forEach(wordObj => {
-        let tr = document.createElement("tr");
+        const tr = document.createElement("tr");
+        const tdG = document.createElement("td");
+        tdG.textContent = wordObj.german;
+        tr.appendChild(tdG);
 
-        let tdGerman = document.createElement("td");
-        tdGerman.textContent = wordObj.german;
-        tr.appendChild(tdGerman);
-
-        let tdEnglish = document.createElement("td");
-        tdEnglish.textContent = wordObj.english;
-        tr.appendChild(tdEnglish);
+        const tdE = document.createElement("td");
+        tdE.textContent = wordObj.english;
+        tr.appendChild(tdE);
 
         tableBody.appendChild(tr);
       });
-    }
-
-    /*********************************************
-     * Filter words on search input
-     *********************************************/
-    function filterWords() {
-      // read from searchBox
-      searchQuery = document.getElementById("searchBox").value.trim();
-      displayWords();
     }
   </script>
 </body>
