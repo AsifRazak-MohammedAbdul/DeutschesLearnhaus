@@ -13,12 +13,6 @@
   <div id="container">
     <h2>Multiple Choice Game</h2>
 
-    <!-- Display the chosen config (limit & direction) -->
-    <div id="gameConfig" style="margin-bottom:1rem; color:#ccc;">
-      <p>Number of Questions: <span id="infoLimit">5</span></p>
-      <p>Direction: <span id="infoDirection">DE->EN</span></p>
-    </div>
-
     <!-- The actual game area -->
     <div id="gameArea" style="display:none;">
 
@@ -151,8 +145,6 @@
       direction = params.get("dir") || "DE->EN";
 
       // Display config
-      document.getElementById("infoLimit").textContent = questionLimit;
-      document.getElementById("infoDirection").textContent = direction;
       document.getElementById("totalQuestions").textContent = questionLimit;
 
       // exit modal references

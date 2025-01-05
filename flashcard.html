@@ -13,12 +13,6 @@
   <div id="container">
     <h2>Flash Card Game</h2>
 
-    <!-- Config Info -->
-    <div id="gameConfig" style="margin-bottom:1rem; color:#ccc;">
-      <p>Number of Questions: <span id="infoLimit">5</span></p>
-      <p>Direction: <span id="infoDirection">DE->EN</span></p>
-    </div>
-
     <div id="gameArea" style="display:none;">
       
       <!-- Centered question counter -->
@@ -149,8 +143,6 @@
       questionLimit = parseInt(params.get("limit")) || 5;
       direction = params.get("dir") || "DE->EN";
 
-      document.getElementById("infoLimit").textContent = questionLimit;
-      document.getElementById("infoDirection").textContent = direction;
       document.getElementById("totalQuestions").textContent = questionLimit;
 
       // exit modal
