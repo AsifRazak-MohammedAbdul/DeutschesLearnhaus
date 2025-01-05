@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>All Words - Deutsches Lernhaus</title>
+  <!-- Mobile friendly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>All Words - Deutsches Lernhaus</h1>
+  <div id="containerWords">
+
+    <div id="controls" style="display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; align-items: center;">
+      <!-- Back Button -->
+      <button onclick="window.location.href='index.html'">Back to Game</button>
+      <!-- Search Bar -->
+      <input 
+        type="text" 
+        id="searchBox" 
+        placeholder="Search in German or English..." 
+        oninput="filterWords()" 
+      />
+    </div>
+
+    <!-- Alphabet Filter -->
+    <div id="alphabetFilter"></div>
+
+    <!-- Table for words -->
+    <table>
+      <thead>
+        <tr>
+          <th>German</th>
+          <th>English</th>
+        </tr>
+      </thead>
+      <tbody id="wordTableBody">
+        <!-- Filled by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    let vocab = [];
+    // Current filters
+    let selectedLetter = ""; // e.g. "A", "B", ...
+    let searchQuery = "";
+
+    // Load vocab.json when the page loads
+    window.addEventListener('DOMContentLoaded', () => {
+      fetch("vocab.json")
+        .then(resp => resp.json())
+        .then(data => {
+          vocab = data;
+          console.log("Loaded vocab:", vocab);
+          buildAlphabetButtons();
+          displayWords(); // initial display
+        })
+        .catch(err => {
+          alert("Error loading vocab.json. Check console for details.");
+          console.error(err);
+        });
+    });
+
+    /*********************************************
+     * Build A-Z filter buttons (German only)
+     *********************************************/
+    function buildAlphabetButtons() {
+      const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
+      const container = document.getElementById("alphabetFilter");
+      container.innerHTML = "";
+
+      // Add an "All" button to reset letter filter
+      const allBtn = document.createElement("button");
+      allBtn.textContent = "All";
+      allBtn.classList.add("highlight"); // highlight "All" by default
+      allBtn.onclick = () => {
+        selectedLetter = "";
+        highlightSelectedLetter("");
+        filterWords();
+      };
+      container.appendChild(allBtn);
+
+      // Build A-Z
+      alphabet.forEach(letter => {
+        const btn = document.createElement("button");
+        btn.textContent = letter;
+        btn.onclick = () => {
+          selectedLetter = letter;
+          highlightSelectedLetter(letter);
+          filterWords();
+        };
+        container.appendChild(btn);
+      });
+    }
+
+    /*********************************************
+     * Highlight selected letter button
+     *********************************************/
+    function highlightSelectedLetter(letter) {
+      const buttons = document.querySelectorAll("#alphabetFilter button");
+      buttons.forEach(b => {
+        b.classList.remove("highlight");
+        if (b.textContent === letter || (letter === "" && b.textContent === "All")) {
+          b.classList.add("highlight");
+        }
+      });
+    }
+
+    /*********************************************
+     * Display the words (with filters)
+     *********************************************/
+    function displayWords() {
+      const tableBody = document.getElementById("wordTableBody");
+      tableBody.innerHTML = "";
+
+      if (!vocab || vocab.length === 0) {
+        tableBody.innerHTML = "<tr><td colspan='2'>No words available.</td></tr>";
+        return;
+      }
+
+      // Filter the array
+      const filtered = vocab.filter(wordObj => {
+        // 1) Alphabet filter on German only
+        if (selectedLetter) {
+          // must start with letter in GERMAN
+          const startsGerman = wordObj.german.trim().toUpperCase().startsWith(selectedLetter);
+          if (!startsGerman) {
+            return false;
+          }
+        }
+        // 2) Search query in either German or English
+        if (searchQuery) {
+          const g = wordObj.german.toLowerCase();
+          const e = wordObj.english.toLowerCase();
+          const s = searchQuery.toLowerCase();
+          // must contain search string in either column
+          if (!g.includes(s) && !e.includes(s)) {
+            return false;
+          }
+        }
+        return true;
+      });
+
+      if (filtered.length === 0) {
+        tableBody.innerHTML = "<tr><td colspan='2'>No matching words found.</td></tr>";
+        return;
+      }
+
+      filtered.forEach(wordObj => {
+        let tr = document.createElement("tr");
+
+        let tdGerman = document.createElement("td");
+        tdGerman.textContent = wordObj.german;
+        tr.appendChild(tdGerman);
+
+        let tdEnglish = document.createElement("td");
+        tdEnglish.textContent = wordObj.english;
+        tr.appendChild(tdEnglish);
+
+        tableBody.appendChild(tr);
+      });
+    }
+
+    /*********************************************
+     * Filter words on search input
+     *********************************************/
+    function filterWords() {
+      // read from searchBox
+      searchQuery = document.getElementById("searchBox").value.trim();
+      displayWords();
+    }
+  </script>
+</body>
+</html>
